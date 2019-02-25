@@ -1,21 +1,22 @@
-#include "otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerEmulator.h"
+#include "otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface.h"
 
 #include "otsdaq-core/Macros/InterfacePluginMacros.h"
 
 using namespace ots;
 
 #undef __MF_SUBJECT__
-#define __MF_SUBJECT__ "FE-ROCTrackerEmulator"
+#define __MF_SUBJECT__ "FE-ROCTrackerInterface"
 
 //=========================================================================================
-ROCTrackerEmulator::ROCTrackerEmulator(
+ROCTrackerInterface::ROCTrackerInterface(
     const std::string &rocUID,
     const ConfigurationTree &theXDAQContextConfigTree,
     const std::string &theConfigurationPath)
-    : ROCCoreVEmulator(rocUID, theXDAQContextConfigTree, theConfigurationPath) {
-  INIT_MF("ROCTrackerEmulator");
+    : ROCPolarFireCoreInterface(rocUID, theXDAQContextConfigTree,
+                                theConfigurationPath) {
+  INIT_MF("ROCTrackerInterface");
 
-  __CFG_COUT__ << "emulator constructor..." << __E__;
+  __CFG_COUT__ << "Constructor..." << __E__;
 
   try {
     inputTemp_ = getSelfNode().getNode("inputTemperature").getValue<double>();
@@ -29,11 +30,11 @@ ROCTrackerEmulator::ROCTrackerEmulator(
 }
 
 //==========================================================================================
-ROCTrackerEmulator::~ROCTrackerEmulator(void) {}
+ROCTrackerInterface::~ROCTrackerInterface(void) {}
 
 //==================================================================================================
-void ROCTrackerEmulator::writeRegister(unsigned address,
-                                       unsigned data_to_write) {
+void ROCTrackerInterface::writeEmulatorRegister(unsigned address,
+                                                unsigned data_to_write) {
   // lockout member variables for the remainder of the scope
   // this guarantees the emulator thread can safely access the members
   //	Note: the ROCCoreVEmulator locks before calling emulatorWorkLoop
@@ -46,7 +47,7 @@ void ROCTrackerEmulator::writeRegister(unsigned address,
 } // end writeRegister()
 
 //==================================================================================================
-int ROCTrackerEmulator::readRegister(unsigned address) {
+int ROCTrackerInterface::readEmulatorRegister(unsigned address) {
   // lockout member variables for the remainder of the scope
   // this guarantees the emulator thread can safely access the members
   //	Note: the ROCCoreVEmulator locks before calling emulatorWorkLoop
@@ -65,7 +66,7 @@ int ROCTrackerEmulator::readRegister(unsigned address) {
 
 //==================================================================================================
 // return false to stop workloop thread
-bool ROCTrackerEmulator::emulatorWorkLoop(void) {
+bool ROCTrackerInterface::emulatorWorkLoop(void) {
   __CFG_COUT__ << "emulator working..." << __E__;
 
   temp1_.noiseTemp(inputTemp_);
@@ -89,4 +90,4 @@ bool ROCTrackerEmulator::emulatorWorkLoop(void) {
   //	}
 } // end emulatorWorkLoop()
 
-DEFINE_OTS_INTERFACE(ROCTrackerEmulator)
+DEFINE_OTS_INTERFACE(ROCTrackerInterface)
