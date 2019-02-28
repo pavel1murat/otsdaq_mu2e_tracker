@@ -34,11 +34,9 @@ ROCTrackerInterface::~ROCTrackerInterface(void) {}
 
 //==================================================================================================
 void ROCTrackerInterface::writeEmulatorRegister(unsigned address,
-                                                unsigned data_to_write) {
-  // lockout member variables for the remainder of the scope
-  // this guarantees the emulator thread can safely access the members
-  //	Note: the ROCCoreVEmulator locks before calling emulatorWorkLoop
-  std::lock_guard<std::mutex> lock(workloopMutex_);
+                                                unsigned data_to_write)
+{
+
 
   __CFG_COUT__ << "emulator write" << __E__;
 
@@ -47,12 +45,8 @@ void ROCTrackerInterface::writeEmulatorRegister(unsigned address,
 } // end writeRegister()
 
 //==================================================================================================
-int ROCTrackerInterface::readEmulatorRegister(unsigned address) {
-  // lockout member variables for the remainder of the scope
-  // this guarantees the emulator thread can safely access the members
-  //	Note: the ROCCoreVEmulator locks before calling emulatorWorkLoop
-  std::lock_guard<std::mutex> lock(workloopMutex_);
-
+int ROCTrackerInterface::readEmulatorRegister(unsigned address)
+{
   __CFG_COUT__ << "emulator read" << __E__;
 
   if (address == ADDRESS_FIRMWARE_VERSION)
@@ -66,12 +60,11 @@ int ROCTrackerInterface::readEmulatorRegister(unsigned address) {
 
 //==================================================================================================
 // return false to stop workloop thread
-bool ROCTrackerInterface::emulatorWorkLoop(void) {
+bool ROCTrackerInterface::emulatorWorkLoop(void)
+{
   __CFG_COUT__ << "emulator working..." << __E__;
 
   temp1_.noiseTemp(inputTemp_);
-
-  usleep(1000000 /*microseconds*/);
   return true; // true to keep workloop going
 
   //	float input, inputTemp;
