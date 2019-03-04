@@ -62,7 +62,7 @@ int ROCTrackerInterface::readEmulatorRegister(unsigned address)
 // return false to stop workloop thread
 bool ROCTrackerInterface::emulatorWorkLoop(void)
 {
-  __CFG_COUT__ << "emulator working..." << __E__;
+  //__CFG_COUT__ << "emulator working..." << __E__;
 
   temp1_.noiseTemp(inputTemp_);
   return true; // true to keep workloop going
