@@ -16,29 +16,53 @@ ROCTrackerInterface::ROCTrackerInterface(
                                 theConfigurationPath) {
   INIT_MF("ROCTrackerInterface");
 
-  __CFG_COUT__ << "Constructor..." << __E__;
+	__MCOUT_INFO__("ROCTrackerInterface instantiated with link: "
+					<< linkID_ << " and EventWindowDelayOffset = " << delay_
+					<< __E__);
 
-  try {
-    inputTemp_ = getSelfNode().getNode("inputTemperature").getValue<double>();
-  } catch (...) {
-    __CFG_COUT__ << "inputTemperature field not defined. Defaulting..."
-                 << __E__;
-    inputTemp_ = 15.;
-  }
+ 	__CFG_COUT__ << "Constructor..." << __E__;
 
-  temp1_.noiseTemp(inputTemp_);
+	ConfigurationTree rocTypeLink =
+		 Configurable::getSelfNode().getNode("ROCTypeLinkTable");
+
+
+	TrackerParameter_1_ = rocTypeLink.getNode("NumberParam1").getValue<int>();
+		
+	TrackerParameter_2_ = rocTypeLink.getNode("TrueFalseParam2").getValue<bool>();
+				
+	//std::string STMParameter_3 = rocTypeLink.getNode("STMMustBeUniqueParam1").getValue<std::string>();
+        
+	__FE_COUTV__(TrackerParameter_1_);
+	__FE_COUTV__(TrackerParameter_2_);
+    //    __FE_COUTV__(STMParameter_3);                                
+ 
+
+  //try {
+  //  inputTemp_ = getSelfNode().getNode("inputTemperature").getValue<double>();
+  //} catch (...) {
+  //  __CFG_COUT__ << "inputTemperature field not defined. Defaulting..."
+  //               << __E__;
+  //  inputTemp_ = 15.;
+  //}
+
+  //temp1_.noiseTemp(inputTemp_);
 }
 
 //==========================================================================================
-ROCTrackerInterface::~ROCTrackerInterface(void) {}
+ROCTrackerInterface::~ROCTrackerInterface(void) {
+	// NOTE:: be careful not to call __FE_COUT__ decoration because it uses the
+  	// tree and it may already be destructed partially
+  	__COUT__ << FEVInterface::interfaceUID_ << " Destructor" << __E__;
+}
 
 //==================================================================================================
 void ROCTrackerInterface::writeEmulatorRegister(unsigned address,
                                                 unsigned data_to_write)
 {
 
-
-  __CFG_COUT__ << "emulator write" << __E__;
+  __FE_COUT__ << "Calling Tracker write ROC Emulator register: link number " << std::dec
+              << linkID_ << ", address = " << address
+              << ", write data = " << data_to_write << __E__;
 
   return;
 
@@ -47,7 +71,7 @@ void ROCTrackerInterface::writeEmulatorRegister(unsigned address,
 //==================================================================================================
 int ROCTrackerInterface::readEmulatorRegister(unsigned address)
 {
-  __CFG_COUT__ << "emulator read" << __E__;
+  __CFG_COUT__ << "Tracker emulator read" << __E__;
 
   if (address == ADDRESS_FIRMWARE_VERSION)
     return 0x5;
@@ -57,6 +81,29 @@ int ROCTrackerInterface::readEmulatorRegister(unsigned address)
     return -1;
 
 } // end readRegister()
+
+//==================================================================================================
+void ROCTrackerInterface::configure(void) try
+{
+	
+	__CFG_COUT__ << "Tracker configure, first configure back-end communication with DTC... " << __E__;
+	ROCPolarFireCoreInterface::configure();
+
+	__CFG_COUT__ << "Tracker configure, next configure front-end... " << __E__;
+
+}
+catch(const std::runtime_error& e)
+{
+	__FE_MOUT__ << "Error caught: " << e.what() << __E__;
+	throw;
+}
+catch(...)
+{
+	__FE_SS__ << "Unknown error caught. Check printouts!" << __E__;
+	__FE_MOUT__ << ss.str();
+	__FE_SS_THROW__;
+}
+
 
 //==================================================================================================
 // return false to stop workloop thread
