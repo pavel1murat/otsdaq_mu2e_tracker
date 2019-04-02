@@ -90,6 +90,8 @@ void ROCTrackerInterface::configure(void) try
 	ROCPolarFireCoreInterface::configure();
 
 	__CFG_COUT__ << "Tracker configure, next configure front-end... " << __E__;
+	__MCOUT_INFO__("..... Vadim, if you tell me what register to write, I could write parameter 1 = " << TrackerParameter_1_ << __E__);
+	__MCOUT_INFO__("..... followed by parameter 2 = " << TrackerParameter_2_ << __E__);
 
 }
 catch(const std::runtime_error& e)
