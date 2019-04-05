@@ -46,6 +46,9 @@ public:
 	private:
 		unsigned int TrackerParameter_1_;
 		bool TrackerParameter_2_;
+  public:
+	void ReadTrackerFIFO(__ARGS__);
+
 };
 
 } // namespace ots
