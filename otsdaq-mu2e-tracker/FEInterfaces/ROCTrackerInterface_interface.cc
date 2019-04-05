@@ -35,6 +35,14 @@ ROCTrackerInterface::ROCTrackerInterface(
 	__FE_COUTV__(TrackerParameter_1_);
 	__FE_COUTV__(TrackerParameter_2_);
     //    __FE_COUTV__(STMParameter_3);                                
+
+
+	registerFEMacroFunction("ReadROCTrackerFIFO",
+	                        static_cast<FEVInterface::frontEndMacroFunction_t>(
+	                            &ROCTrackerInterface::ReadTrackerFIFO),
+	                        std::vector<std::string>{"FIFOSize"}, //inputs parameters
+	                        std::vector<std::string>{}, //output parameters
+	                        1);  // requiredUserPermissions
  
 
   //try {
@@ -46,6 +54,38 @@ ROCTrackerInterface::ROCTrackerInterface(
   //}
 
   //temp1_.noiseTemp(inputTemp_);
+}
+void ROCTrackerInterface::ReadTrackerFIFO(__ARGS__) 
+{
+	__FE_COUT__ << "# of input args = " << argsIn.size() << __E__;
+	__FE_COUT__ << "# of output args = " << argsOut.size() << __E__;
+	for(auto& argIn : argsIn)
+		__FE_COUT__ << argIn.first << ": " << argIn.second << __E__;
+
+	// macro commands section
+
+	__FE_COUT__ << "# of input args = " << argsIn.size() << __E__;
+	__FE_COUT__ << "# of output args = " << argsOut.size() << __E__;
+
+	for(auto& argIn : argsIn)
+		__FE_COUT__ << argIn.first << ": " << argIn.second << __E__;
+
+	uint8_t  FIFOSize   = __GET_ARG_IN__("FIFOSize", uint8_t);
+
+	__FE_COUTV__(FIFOSize);
+	//	__FE_COUT__ << "block = " << std::dec << (unsigned int)block << __E__;
+	//	__FE_COUT__ << "address = 0x" << std::hex << (unsigned int)address << std::dec
+	//	            << __E__;
+	//	__FE_COUT__ << "writeData = 0x" << std::hex << writeData << std::dec << __E__;
+
+
+	for (unsigned i=0; i < FIFOSize; i++) {
+	  writeRegister(0x42,1);
+	  __FE_COUT__ << "word " << i << " = 0x" << std::hex << readRegister(0x42) << __E__;
+	}
+
+	for(auto& argOut : argsOut)
+		__FE_COUT__ << argOut.first << ": " << argOut.second << __E__;
 }
 
 //==========================================================================================
