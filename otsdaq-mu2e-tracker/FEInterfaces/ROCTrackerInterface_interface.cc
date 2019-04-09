@@ -40,7 +40,7 @@ ROCTrackerInterface::ROCTrackerInterface(
 	registerFEMacroFunction("ReadROCTrackerFIFO",
 	                        static_cast<FEVInterface::frontEndMacroFunction_t>(
 	                            &ROCTrackerInterface::ReadTrackerFIFO),
-	                        std::vector<std::string>{"FIFOSize"}, //inputs parameters
+	                        std::vector<std::string>{"NumberOfTimesToReadFIFO"}, //inputs parameters
 	                        std::vector<std::string>{}, //output parameters
 	                        1);  // requiredUserPermissions
  
@@ -70,19 +70,41 @@ void ROCTrackerInterface::ReadTrackerFIFO(__ARGS__)
 	for(auto& argIn : argsIn)
 		__FE_COUT__ << argIn.first << ": " << argIn.second << __E__;
 
-	uint8_t  FIFOSize   = __GET_ARG_IN__("FIFOSize", uint8_t);
+	uint8_t  NumberOfTimesToReadFIFO   = __GET_ARG_IN__("NumberOfTimesToReadFIFO", uint8_t);
 
-	__FE_COUTV__(FIFOSize);
-	//	__FE_COUT__ << "block = " << std::dec << (unsigned int)block << __E__;
-	//	__FE_COUT__ << "address = 0x" << std::hex << (unsigned int)address << std::dec
-	//	            << __E__;
-	//	__FE_COUT__ << "writeData = 0x" << std::hex << writeData << std::dec << __E__;
+	__FE_COUTV__(NumberOfTimesToReadFIFO);
 
 
-	for (unsigned i=0; i < FIFOSize; i++) {
-	  writeRegister(0x42,1);
-	  __FE_COUT__ << "word " << i << " = 0x" << std::hex << readRegister(0x42) << __E__;
+	std::ofstream datafile;
+
+	std::stringstream filename;
+	filename << "/home/mu2ehwdev/test_stand/ots/tracker_data.txt";
+	std::string filenamestring = filename.str();
+	datafile.open(filenamestring);
+
+	for (unsigned i=0; i < NumberOfTimesToReadFIFO; i++) {
+
+	  datafile << "============" << std::endl;
+	  datafile << "Read FIFO " << std::dec << i << " times..." << std::endl; 
+	  datafile << "============" << std::endl;
+
+	  unsigned FIFOdepth = 0;
+	  while (FIFOdepth <= 0) {
+	    __FE_COUT__ << " wait for non-zero depth" << __E__;
+	    FIFOdepth = readRegister(0x35);
+	  }
+
+	  //writeRegister(0x42,1);
+	  for (unsigned j=0;j < FIFOdepth; j++) {
+	    datafile << "0x" << std::hex << readRegister(0x42) << "  -  " << std::dec << std::endl;
+	  }
+
+	  datafile << "=================================================" << std::endl;
+
 	}
+
+	datafile.close();
+
 
 	for(auto& argOut : argsOut)
 		__FE_COUT__ << argOut.first << ": " << argOut.second << __E__;
@@ -129,9 +151,9 @@ void ROCTrackerInterface::configure(void) try
 	__CFG_COUT__ << "Tracker configure, first configure back-end communication with DTC... " << __E__;
 	ROCPolarFireCoreInterface::configure();
 
-	__CFG_COUT__ << "Tracker configure, next configure front-end... " << __E__;
-	__MCOUT_INFO__("..... Vadim, if you tell me what register to write, I could write parameter 1 = " << TrackerParameter_1_ << __E__);
-	__MCOUT_INFO__("..... followed by parameter 2 = " << TrackerParameter_2_ << __E__);
+	//__MCOUT_INFO__("Tracker configure, next configure front-end... " << __E__);
+	//__MCOUT_INFO__("..... write parameter 1 = " << TrackerParameter_1_ << __E__);
+	//__MCOUT_INFO__("..... followed by parameter 2 = " << TrackerParameter_2_ << __E__);
 
 }
 catch(const std::runtime_error& e)

@@ -1,6 +1,10 @@
 #ifndef _ots_ROCTrackerInterface_h_
 #define _ots_ROCTrackerInterface_h_
 
+#include <fstream>
+#include <iostream>
+#include <string>
+
 #include "otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface.h"
 
 namespace ots {
