@@ -89,15 +89,28 @@ void ROCTrackerInterface::ReadTrackerFIFO(__ARGS__)
 	  datafile << "============" << std::endl;
 
 	  unsigned FIFOdepth = 0;
-	  while (FIFOdepth <= 0) {
-	    __FE_COUT__ << " wait for non-zero depth" << __E__;
+	  unsigned counter = 0;    // don't wait forever
+
+	  while (FIFOdepth <= 0 && counter < 1000) {
+
+	    if (counter % 100 == 0) __FE_COUT__ << "... waiting for non-zero depth" << __E__;
 	    FIFOdepth = readRegister(0x35);
+	    counter++;
+
 	  }
 
-	  //writeRegister(0x42,1);
-	  for (unsigned j=0;j < FIFOdepth; j++) {
-	    datafile << "0x" << std::hex << readRegister(0x42) << "  -  " << std::dec << std::endl;
+	  if (FIFOdepth > 0) {
+
+	    //writeRegister(0x42,1);
+	    for (unsigned j=0;j < FIFOdepth; j++) {
+	      datafile << "0x" << std::hex << readRegister(0x42) << "  -  " << std::dec << j << std::endl;
+
+	    }
+
+	  } else {
+	    datafile << "... no data..." << std::endl;
 	  }
+
 
 	  datafile << "=================================================" << std::endl;
 
