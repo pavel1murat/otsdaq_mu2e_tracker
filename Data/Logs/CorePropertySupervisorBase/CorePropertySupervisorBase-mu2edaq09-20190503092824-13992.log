@@ -1,0 +1,78 @@
+%MSG-i configureMessageFacility:  Early 03-May-2019 09:28:24 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application CorePropertySupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/CorePropertySupervisorBase" pattern:"CorePropertySupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i _TCPConnect:  DAQ 03-May-2019 09:28:24 CDT Booted TCPConnect.cc:334
+Resolving host 127.0.0.1, on port 30000
+%MSG
+%MSG-i _TCPConnect:  DAQ 03-May-2019 09:28:24 CDT Booted TCPConnect.cc:241
+Resolving ip mu2edaq09
+%MSG
+%MSG-i configureMessageFacility:  DAQ 03-May-2019 09:28:24 CDT Booted configureMessageFacility.cc:286
+Message Facility Application RunControlStateMachine configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/RunControlStateMachine" pattern:"RunControlStateMachine-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  DAQ 03-May-2019 09:28:24 CDT Booted configureMessageFacility.cc:286
+Message Facility Application CoreSupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/CoreSupervisorBase" pattern:"CoreSupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  Early 03-May-2019 09:29:01 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCCoreVInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCCoreVInterface" pattern:"ROCCoreVInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCCoreVInterface:  Early 03-May-2019 09:29:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [28]	ROCCoreVInterface instantiated with link: 0 and EventWindowDelayOffset = 666
+%MSG
+%MSG-i configureMessageFacility:  Early 03-May-2019 09:29:01 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCPolarFireCoreInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCPolarFireCoreInterface" pattern:"ROCPolarFireCoreInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 03-May-2019 09:29:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [19]	ROCPolarFireCoreInterface instantiated with link: 0 and EventWindowDelayOffset = 666
+%MSG
+%MSG-i configureMessageFacility:  Early 03-May-2019 09:29:01 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCTrackerInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCTrackerInterface" pattern:"ROCTrackerInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCTrackerInterface:  Early 03-May-2019 09:29:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [21]	ROCTrackerInterface instantiated with link: 0 and EventWindowDelayOffset = 666
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [131]	DTCFrontEndInterface instantiated with name: DTC0 dtc_location_in_chain_ = 0 talking to /dev/mu2e0
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [846]	Step 0: DTC0 reset FPGA...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:04 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [854]	............. firmware version 19042910
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:04 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [867]	Step 1: DTC0 reset clock...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:14 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [912]	Step 2: DTC0 configure Jitter Attenuator...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:19 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [932]	Step 3: DTC0 enable CFO emulation and internal clock
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:19 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [980]	Step 4: DTC0 wait for links...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:23 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1020]	Step 5: DTC0 enable markers, Tx, Rx
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:23 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1042]	Step 5: DTC0 configure ROCs
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 03-May-2019 09:29:23 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [153]	......... setup to synchronize ROC clock with 40 MHz clock edge
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 03-May-2019 09:29:24 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [161]	......... Set delay = 666, readback = 65535... 
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 03-May-2019 09:29:24 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [188]	......... reset DTC link loss counter ... 
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:25 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1055]	Step 6: CFO emulation enable Event start characters and event window interval
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:25 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1070]	Step 6: DTC0 configured
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 03-May-2019 09:29:25 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1088]	DTC0 links not OK 0x80
+%MSG

@@ -1,0 +1,2400 @@
+%MSG-i configureMessageFacility:  Early 01-May-2019 09:51:29 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application CorePropertySupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/CorePropertySupervisorBase" pattern:"CorePropertySupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i _TCPConnect:  DAQ 01-May-2019 09:51:29 CDT Booted TCPConnect.cc:334
+Resolving host 127.0.0.1, on port 30000
+%MSG
+%MSG-i _TCPConnect:  DAQ 01-May-2019 09:51:29 CDT Booted TCPConnect.cc:241
+Resolving ip mu2edaq09
+%MSG
+%MSG-i configureMessageFacility:  DAQ 01-May-2019 09:51:29 CDT Booted configureMessageFacility.cc:286
+Message Facility Application RunControlStateMachine configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/RunControlStateMachine" pattern:"RunControlStateMachine-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  DAQ 01-May-2019 09:51:29 CDT Booted configureMessageFacility.cc:286
+Message Facility Application CoreSupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/CoreSupervisorBase" pattern:"CoreSupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  Early 01-May-2019 09:51:43 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCCoreVInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCCoreVInterface" pattern:"ROCCoreVInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCCoreVInterface:  Early 01-May-2019 09:51:43 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [28]	ROCCoreVInterface instantiated with link: 0 and EventWindowDelayOffset = 666
+%MSG
+%MSG-i configureMessageFacility:  Early 01-May-2019 09:51:43 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCPolarFireCoreInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCPolarFireCoreInterface" pattern:"ROCPolarFireCoreInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 01-May-2019 09:51:43 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [19]	ROCPolarFireCoreInterface instantiated with link: 0 and EventWindowDelayOffset = 666
+%MSG
+%MSG-i configureMessageFacility:  Early 01-May-2019 09:51:43 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCTrackerInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCTrackerInterface" pattern:"ROCTrackerInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCTrackerInterface:  Early 01-May-2019 09:51:43 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [21]	ROCTrackerInterface instantiated with link: 0 and EventWindowDelayOffset = 666
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:51:43 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [131]	DTCFrontEndInterface instantiated with name: DTC0 dtc_location_in_chain_ = 0 talking to /dev/mu2e0
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:51:43 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [846]	Step 0: DTC0 reset FPGA...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:51:46 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [854]	............. firmware version 19042910
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:51:46 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [867]	Step 1: DTC0 reset clock...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:51:56 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [912]	Step 2: DTC0 configure Jitter Attenuator...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:52:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [932]	Step 3: DTC0 enable CFO emulation and internal clock
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:52:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [980]	Step 4: DTC0 wait for links...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:52:24 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [980]	Step 4: DTC0 wait for links...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:52:27 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1020]	Step 5: DTC0 enable markers, Tx, Rx
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:52:27 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1042]	Step 5: DTC0 configure ROCs
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 01-May-2019 09:52:27 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [153]	......... setup to synchronize ROC clock with 40 MHz clock edge
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 01-May-2019 09:52:27 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [161]	......... Set delay = 666, readback = 65535... 
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 01-May-2019 09:52:27 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [188]	......... reset DTC link loss counter ... 
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:52:28 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1055]	Step 6: CFO emulation enable Event start characters and event window interval
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:52:28 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1070]	Step 6: DTC0 configured
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 01-May-2019 09:52:28 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1088]	DTC0 links not OK 0xc0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 93... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 27... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 40... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 36... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 14... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 27... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 47... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 71... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 21... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 46... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 64... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 92... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 65... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:33 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 17... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 47... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 96... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 80... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 75... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 96... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 42... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 81... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 84... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 61... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 21... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 92... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 96... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 8... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 13... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 86... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 4... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 85... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 100... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 14... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 64... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 36... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 36... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 44... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 100... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 28... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 41... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 16... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 96... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 39... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 76... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 65... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 59... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 17... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 42... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 29... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 70... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 52... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 21... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 65... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 85... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 14... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 97... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 89... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 51... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 48... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 54... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 14... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 45... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 90... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 49... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 40... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 89... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 76... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 32... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 4... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 72... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 22... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 67... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 99... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 25... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 67... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 84... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 18... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 95... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 5... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 21... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 67... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 70... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 32... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 4... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 35... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 80... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 44... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 85... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 27... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 97... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 23... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 86... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 99... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 15... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 26... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 74... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 82... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 97... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 20... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 100... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 47... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 58... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 76... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 13... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 93... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 93... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 60... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 97... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 13... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 78... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 66... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 96... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 81... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 1... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 75... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 76... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 37... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 28... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 10... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 85... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 42... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 88... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 10... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 39... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 69... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 7... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 10... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 20... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 5... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 67... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 95... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 70... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 59... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 29... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 56... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 51... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 58... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 99... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 91... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 25... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 25... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 66... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 62... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 78... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 38... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 48... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 57... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 100... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 32... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 50... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 93... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 40... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 7... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 51... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 50... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 26... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 56... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 68... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 72... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 25... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 27... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 10... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 5... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 34... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 60... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 62... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 6... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 10... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 4... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 31... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 35... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 70... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 44... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 64... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 59... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 43... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 20... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 10... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 26... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 21... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 96... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 18... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 60... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 54... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 69... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 9... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 79... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 24... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 77... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 2... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 100... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 55... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 4... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 88... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 71... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 17... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 45... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 80... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 21... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 75... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 66... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 42... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 70... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 29... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 52... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 12... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 100... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 62... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 37... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 20... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 57... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 55... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 80... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 23... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 40... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 41... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 68... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 43... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 97... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 22... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 5... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 52... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 61... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 75... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 20... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 6... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 7... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 40... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 32... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 72... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 33... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 2... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 85... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 65... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 52... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 46... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 2... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 72... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 54... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 8... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 51... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 16... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 82... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 90... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 9... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 31... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 10... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 27... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 31... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 7... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 30... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 44... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 34... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 49... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 49... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 92... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 41... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 80... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 63... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 33... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 67... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 9... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 19... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 6... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 51... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 90... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 12... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 10... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 92... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 27... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 91... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 33... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 21... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 42... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 89... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 99... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 25... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 48... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 28... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 68... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 81... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 28... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 16... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 72... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 68... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 47... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 86... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 93... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 80... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 29... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 23... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 59... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 79... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 64... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 70... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 40... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 55... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 48... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 30... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 35... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 2... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 81... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 75... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 52... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 5... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 22... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 31... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 72... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 54... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 58... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 39... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 25... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 78... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 85... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 63... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 70... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 16... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 15... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 74... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 44... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 89... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 32... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 74... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 52... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 13... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 6... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 94... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 44... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 95... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 76... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 13... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 46... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 80... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 76... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 40... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 86... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 41... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 65... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 63... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 26... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 27... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 84... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 41... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 93... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 57... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 37... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 81... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 41... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 10... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 32... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 45... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 23... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 89... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 97... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 68... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 84... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 35... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 63... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 60... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 48... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 60... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 91... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 34... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 88... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 94... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 25... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 34... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 89... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 59... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 67... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 70... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 52... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 78... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 88... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 91... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 18... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 97... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 74... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 63... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 71... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 62... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 39... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 46... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 57... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 45... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 12... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 99... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 30... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 99... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 92... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 54... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 23... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 26... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 43... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 9... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 36... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 61... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 30... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 72... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 8... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 74... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 14... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 77... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 23... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 88... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 91... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 93... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 1... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 2... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 83... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 47... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 35... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 6... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 91... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 99... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 5... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 20... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 49... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 96... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 25... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 72... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 67... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 32... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 9... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 80... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 14... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 95... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 51... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 21... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 21... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 64... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 49... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 43... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 40... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 4... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 41... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 70... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 4... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 29... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 54... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 15... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 100... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 62... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 24... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 26... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 35... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 43... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:35 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 57... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 95... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 22... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 22... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 89... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 24... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 42... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 61... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 91... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 42... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 30... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 90... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 45... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 22... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 59... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 49... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 8... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 14... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 59... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 88... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 20... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 22... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 62... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 47... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 4... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 55... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 67... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 25... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [338]	RUN END
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [339]	--> number of good events = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:52:36 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [340]	--> number of bad events = 530
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 78... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 100... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 24... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 14... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 65... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 57... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 57... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 57... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 43... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 25... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 27... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 49... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 76... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 49... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 60... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 14... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 34... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 22... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 45... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 48... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 18... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 33... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 51... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 20... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 18... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 60... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 64... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 71... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 39... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 84... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 75... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 48... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 40... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 61... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 4... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 34... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 37... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 82... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 82... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 13... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 82... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 93... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 26... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:04 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 16... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 66... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 70... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 26... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 68... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 74... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 25... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 37... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 7... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 76... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 9... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 24... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 72... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 94... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 62... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 29... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 24... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 9... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 68... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 37... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 65... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 46... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 34... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 37... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 28... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 79... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 15... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 43... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 44... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 36... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 20... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 12... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 62... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 44... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 100... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 20... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 71... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 8... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 43... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 58... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 31... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 88... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 7... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 93... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 68... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 30... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 87... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 66... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 17... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 39... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 91... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 63... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 24... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 79... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 42... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 2... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 93... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 84... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 46... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 29... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 9... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 90... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 8... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 9... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 69... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 16... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 78... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 42... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 84... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 90... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 61... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 65... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 43... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 47... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 83... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 85... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 8... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 51... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 66... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 62... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 96... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 49... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 7... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 76... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 67... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 17... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 1... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 74... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 77... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 21... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 41... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 31... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 39... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 72... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 33... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 80... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 84... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 97... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 74... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 30... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 79... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 85... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 14... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 9... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 6... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 75... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 86... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 53... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 23... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 44... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 28... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 78... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 10... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 44... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 78... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 84... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 20... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 98... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 76... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 50... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 47... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 66... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 73... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 79... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 46... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 56... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 27... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 19... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 85... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 6... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 50... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 60... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 64... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 74... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 17... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 38... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 60... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 69... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 12... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 3... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 96... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 89... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 13... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 39... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 18... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 48... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 58... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 15... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 75... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 59... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 61... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 41... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 31... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 91... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 86... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 86... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 18... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 56... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 22... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 75... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 11... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 71... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 34... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 74... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 97... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 51... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 63... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 56... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 19... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 74... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 10... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 15... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 15... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 22... punt on this event
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 01-May-2019 09:53:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [238]	... DTC returns 0 words instead of 5... punt on this event
+%MSG

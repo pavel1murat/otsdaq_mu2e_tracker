@@ -1,0 +1,510 @@
+%MSG-i configureMessageFacility:  Early 30-Apr-2019 14:14:29 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application CorePropertySupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/CorePropertySupervisorBase" pattern:"CorePropertySupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i _TCPConnect:  DAQ 30-Apr-2019 14:14:29 CDT Booted TCPConnect.cc:334
+Resolving host 127.0.0.1, on port 30000
+%MSG
+%MSG-i _TCPConnect:  DAQ 30-Apr-2019 14:14:29 CDT Booted TCPConnect.cc:241
+Resolving ip mu2edaq09
+%MSG
+%MSG-i configureMessageFacility:  DAQ 30-Apr-2019 14:14:30 CDT Booted configureMessageFacility.cc:286
+Message Facility Application RunControlStateMachine configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/RunControlStateMachine" pattern:"RunControlStateMachine-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  DAQ 30-Apr-2019 14:14:30 CDT Booted configureMessageFacility.cc:286
+Message Facility Application CoreSupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/CoreSupervisorBase" pattern:"CoreSupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  Early 30-Apr-2019 14:15:05 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCCoreVInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCCoreVInterface" pattern:"ROCCoreVInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCCoreVInterface:  Early 30-Apr-2019 14:15:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [28]	ROCCoreVInterface instantiated with link: 0 and EventWindowDelayOffset = 0
+%MSG
+%MSG-i configureMessageFacility:  Early 30-Apr-2019 14:15:05 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCPolarFireCoreInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCPolarFireCoreInterface" pattern:"ROCPolarFireCoreInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 14:15:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [19]	ROCPolarFireCoreInterface instantiated with link: 0 and EventWindowDelayOffset = 0
+%MSG
+%MSG-i configureMessageFacility:  Early 30-Apr-2019 14:15:05 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCTrackerInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCTrackerInterface" pattern:"ROCTrackerInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCTrackerInterface:  Early 30-Apr-2019 14:15:05 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [21]	ROCTrackerInterface instantiated with link: 0 and EventWindowDelayOffset = 0
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [131]	DTCFrontEndInterface instantiated with name: DTC0 dtc_location_in_chain_ = 0 talking to /dev/mu2e0
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [846]	Step 0: DTC0 reset FPGA...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:08 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [854]	............. firmware version 19042910
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:08 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [867]	Step 1: DTC0 reset clock...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:18 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [912]	Step 2: DTC0 configure Jitter Attenuator...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:24 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [932]	Step 3: DTC0 enable CFO emulation and internal clock
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:24 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [980]	Step 4: DTC0 wait for links...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:43 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1020]	Step 5: DTC0 enable markers, Tx, Rx
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:43 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1042]	Step 5: DTC0 configure ROCs
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 14:15:43 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [153]	......... setup to synchronize ROC clock with 40 MHz clock edge
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 14:15:43 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [161]	......... Set delay = 0, readback = 0... 
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 14:15:43 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [188]	......... reset DTC link loss counter ... 
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:44 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1055]	Step 6: CFO emulation enable Event start characters and event window interval
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:44 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1070]	Step 6: DTC0 configured
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:15:44 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1075]	DTC0 links OK 0xc1
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1195]	.... ROC0-DTC link lost 0 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 16 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 95 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 96 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 46 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 70 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 99 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 0:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 1:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 2:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 3:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 4:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 5:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 6:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 7:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 8:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 9:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 10:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 11:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 12:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 13:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 14:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 15:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 16:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 17:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 18:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 19:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 20:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 21:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 22:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 23:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 24:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 25:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 26:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 27:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 28:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 29:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 30:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 31:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 32:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 33:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 34:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 35:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 36:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 37:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 38:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 39:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 40:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 41:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 42:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 43:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 44:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 45:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 46:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 47:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 48:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 49:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 50:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 51:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 52:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 53:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 54:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 55:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 56:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 57:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 58:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 59:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 60:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 61:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 62:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 63:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 64:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 65:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 66:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 67:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 68:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 69:  read = 4860, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 70:  read = 32720, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 72:  read = 120, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 73:  read = 28672, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 74:  read = 32720, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 76:  read = 49, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 80:  read = 152, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 81:  read = 28672, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 82:  read = 32720, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 84:  read = 152, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 85:  read = 28672, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 86:  read = 32720, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 88:  read = 120, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 89:  read = 28672, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 90:  read = 32720, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 92:  read = 120, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 93:  read = 28672, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 94:  read = 32720, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [224]	... fail on read 96:  read = 208, expected = 0
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 50 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 34 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 12 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 96 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 24 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 49 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 26 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 50 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 87 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 16 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 98 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 48 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 23 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 24 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 56 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 35 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 47 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 45 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 82 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 23 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 75 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 35 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 0 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 85 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 36 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 95 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 32 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 85 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 41 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 3 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 84 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 43 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 89 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 96 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 39 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 13 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 97 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 18 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 16 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 85 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 34 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 14 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 85 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 58 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 90 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 41 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 45 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 7 38 times
+%MSG
+%MSG-d FE-ROCTrackerInterface:  Early 30-Apr-2019 14:16:01 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [208]	DTC0_ROC0_Tracker :	 read register 6 87 times
+%MSG

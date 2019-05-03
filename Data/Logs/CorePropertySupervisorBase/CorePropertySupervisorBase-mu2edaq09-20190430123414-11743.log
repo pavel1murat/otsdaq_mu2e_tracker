@@ -1,0 +1,825 @@
+%MSG-i configureMessageFacility:  Early 30-Apr-2019 12:34:14 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application CorePropertySupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/CorePropertySupervisorBase" pattern:"CorePropertySupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i _TCPConnect:  DAQ 30-Apr-2019 12:34:14 CDT Booted TCPConnect.cc:334
+Resolving host 127.0.0.1, on port 30000
+%MSG
+%MSG-i _TCPConnect:  DAQ 30-Apr-2019 12:34:14 CDT Booted TCPConnect.cc:241
+Resolving ip mu2edaq09
+%MSG
+%MSG-i configureMessageFacility:  DAQ 30-Apr-2019 12:34:14 CDT Booted configureMessageFacility.cc:286
+Message Facility Application RunControlStateMachine configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/RunControlStateMachine" pattern:"RunControlStateMachine-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  DAQ 30-Apr-2019 12:34:14 CDT Booted configureMessageFacility.cc:286
+Message Facility Application CoreSupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/CoreSupervisorBase" pattern:"CoreSupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  Early 30-Apr-2019 12:34:34 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCCoreVInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCCoreVInterface" pattern:"ROCCoreVInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCCoreVInterface:  Early 30-Apr-2019 12:34:34 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [28]	ROCCoreVInterface instantiated with link: 0 and EventWindowDelayOffset = 0
+%MSG
+%MSG-i configureMessageFacility:  Early 30-Apr-2019 12:34:34 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCPolarFireCoreInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCPolarFireCoreInterface" pattern:"ROCPolarFireCoreInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 12:34:34 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [19]	ROCPolarFireCoreInterface instantiated with link: 0 and EventWindowDelayOffset = 0
+%MSG
+%MSG-i configureMessageFacility:  Early 30-Apr-2019 12:34:34 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCTrackerInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCTrackerInterface" pattern:"ROCTrackerInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCTrackerInterface:  Early 30-Apr-2019 12:34:34 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [21]	ROCTrackerInterface instantiated with link: 0 and EventWindowDelayOffset = 0
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:34:34 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [131]	DTCFrontEndInterface instantiated with name: DTC0 dtc_location_in_chain_ = 0 talking to /dev/mu2e0
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:34:34 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [846]	Step 0: DTC0 reset FPGA...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:34:37 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [854]	............. firmware version 19041816
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:34:37 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [867]	Step 1: DTC0 reset clock...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:34:47 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [912]	Step 2: DTC0 configure Jitter Attenuator...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:34:52 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [932]	Step 3: DTC0 enable CFO emulation and internal clock
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:34:52 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [980]	Step 4: DTC0 wait for links...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:35:11 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1020]	Step 5: DTC0 enable markers, Tx, Rx
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:35:11 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1042]	Step 5: DTC0 configure ROCs
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 12:35:11 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [153]	......... setup to synchronize ROC clock with 40 MHz clock edge
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 12:35:11 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [161]	......... Set delay = 0, readback = -999... 
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 12:35:11 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [188]	......... reset DTC link loss counter ... 
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:35:12 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1055]	Step 6: CFO emulation enable Event start characters and event window interval
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:35:12 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1070]	Step 6: DTC0 configured
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:35:12 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1075]	DTC0 links OK 0xc1
+%MSG
+%MSG-i configureMessageFacility:  Early 30-Apr-2019 12:35:44 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCCoreVInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCCoreVInterface" pattern:"ROCCoreVInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCCoreVInterface:  Early 30-Apr-2019 12:35:44 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [28]	ROCCoreVInterface instantiated with link: 0 and EventWindowDelayOffset = 0
+%MSG
+%MSG-i configureMessageFacility:  Early 30-Apr-2019 12:35:44 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCPolarFireCoreInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCPolarFireCoreInterface" pattern:"ROCPolarFireCoreInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 12:35:44 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [19]	ROCPolarFireCoreInterface instantiated with link: 0 and EventWindowDelayOffset = 0
+%MSG
+%MSG-i configureMessageFacility:  Early 30-Apr-2019 12:35:44 CDT pre-events configureMessageFacility.cc:286
+Message Facility Application ROCTrackerInterface configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/mu2etrk/test_stand/ots/srcs/otsdaq_mu2e_tracker/Data/Logs/ROCTrackerInterface" pattern:"ROCTrackerInterface-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i FE-ROCTrackerInterface:  Early 30-Apr-2019 12:35:44 CDT pre-events
+otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc [21]	ROCTrackerInterface instantiated with link: 0 and EventWindowDelayOffset = 0
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:35:44 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [131]	DTCFrontEndInterface instantiated with name: DTC0 dtc_location_in_chain_ = 0 talking to /dev/mu2e0
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:35:44 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [846]	Step 0: DTC0 reset FPGA...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:35:47 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [854]	............. firmware version 19041816
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:35:47 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [867]	Step 1: DTC0 reset clock...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:35:57 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [912]	Step 2: DTC0 configure Jitter Attenuator...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:36:03 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [932]	Step 3: DTC0 enable CFO emulation and internal clock
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:36:03 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [980]	Step 4: DTC0 wait for links...
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:36:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1020]	Step 5: DTC0 enable markers, Tx, Rx
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:36:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1042]	Step 5: DTC0 configure ROCs
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 12:36:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [153]	......... setup to synchronize ROC clock with 40 MHz clock edge
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 12:36:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [161]	......... Set delay = 0, readback = 0... 
+%MSG
+%MSG-i FE-ROCPolarFireCoreInterface:  Early 30-Apr-2019 12:36:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface_interface.cc [188]	......... reset DTC link loss counter ... 
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:36:23 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1055]	Step 6: CFO emulation enable Event start characters and event window interval
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:36:23 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1070]	Step 6: DTC0 configured
+%MSG
+%MSG-i DTCFrontEndInterface:  Early 30-Apr-2019 12:36:23 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc [1075]	DTC0 links OK 0xc1
+%MSG
+%MSG-d FE-ROCTrackerInterface-DTC0_ROC0_Tracker-DTC0_ROC0_Tracker:  Early  30-Apr-2019 12:37:38 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [132]	Starting the high rate check... 
+%MSG
+%MSG-d FE-ROCTrackerInterface-DTC0_ROC0_Tracker-DTC0_ROC0_Tracker:  Early  30-Apr-2019 12:37:38 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [144]	Thread launched...
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:38 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [153]	DTC0_ROC0_TrackerStarting the high rate check... 
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:38 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker0	 of 10	x 22 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:38 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker0	 of 10	x 29 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:38 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker1	 of 10	x 82 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:39 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker1	 of 10	x 39 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:39 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker2	 of 10	x 99 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:39 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker2	 of 10	x 69 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:39 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker3	 of 10	x 12 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:39 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker3	 of 10	x 26 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:39 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker4	 of 10	x 61 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:39 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker4	 of 10	x 40 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:40 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker5	 of 10	x 49 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:40 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker5	 of 10	x 72 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:40 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker6	 of 10	x 6 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:40 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker6	 of 10	x 95 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:40 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker7	 of 10	x 87 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:40 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker7	 of 10	x 55 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:41 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker8	 of 10	x 67 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:41 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker8	 of 10	x 41 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:41 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker9	 of 10	x 99 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:41 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker9	 of 10	x 37 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:41 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [190]	DTC0_ROC0_TrackerCompleted high rate check. Number of reads: 1087, firstRegCnt=584, secondRegcnt=503
+%MSG
+%MSG-d FE-ROCTrackerInterface-DTC0_ROC0_Tracker-DTC0_ROC0_Tracker:  Early  30-Apr-2019 12:37:52 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [132]	Starting the high rate check... 
+%MSG
+%MSG-d FE-ROCTrackerInterface-DTC0_ROC0_Tracker-DTC0_ROC0_Tracker:  Early  30-Apr-2019 12:37:52 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [144]	Thread launched...
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:52 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [153]	DTC0_ROC0_TrackerStarting the high rate check... 
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:52 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker0	 of 100	x 34 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:52 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker0	 of 100	x 78 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:52 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker1	 of 100	x 79 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:53 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker1	 of 100	x 60 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:53 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker2	 of 100	x 98 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:53 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker2	 of 100	x 71 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:53 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker3	 of 100	x 87 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker3	 of 100	x 11 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker4	 of 100	x 30 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker4	 of 100	x 44 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker5	 of 100	x 43 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker5	 of 100	x 6 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker6	 of 100	x 2 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker6	 of 100	x 14 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker7	 of 100	x 45 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker7	 of 100	x 92 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker8	 of 100	x 0 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker8	 of 100	x 30 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:54 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker9	 of 100	x 21 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:55 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker9	 of 100	x 94 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:55 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker10	 of 100	x 21 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:55 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker10	 of 100	x 86 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:55 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker11	 of 100	x 46 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:55 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker11	 of 100	x 97 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:56 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker12	 of 100	x 62 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:56 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker12	 of 100	x 60 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:56 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker13	 of 100	x 82 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:56 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker13	 of 100	x 8 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:56 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker14	 of 100	x 32 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:56 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker14	 of 100	x 45 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:56 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker15	 of 100	x 76 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:57 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker15	 of 100	x 90 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:57 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker16	 of 100	x 23 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:57 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker16	 of 100	x 7 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:57 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker17	 of 100	x 2 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:57 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker17	 of 100	x 21 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:57 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker18	 of 100	x 78 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:57 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker18	 of 100	x 89 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:57 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker19	 of 100	x 32 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:58 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker19	 of 100	x 60 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:58 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker20	 of 100	x 85 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:58 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker20	 of 100	x 28 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:58 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker21	 of 100	x 66 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:58 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker21	 of 100	x 87 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:58 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker22	 of 100	x 94 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:59 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker22	 of 100	x 64 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:59 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker23	 of 100	x 31 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:59 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker23	 of 100	x 94 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:37:59 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker24	 of 100	x 94 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:00 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker24	 of 100	x 52 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:00 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker25	 of 100	x 40 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:00 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker25	 of 100	x 67 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:00 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker26	 of 100	x 91 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:00 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker26	 of 100	x 87 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker27	 of 100	x 17 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker27	 of 100	x 5 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker28	 of 100	x 99 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker28	 of 100	x 99 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker29	 of 100	x 66 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker29	 of 100	x 31 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:01 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker30	 of 100	x 96 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:02 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker30	 of 100	x 42 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:02 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker31	 of 100	x 73 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:02 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker31	 of 100	x 72 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:02 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker32	 of 100	x 49 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:02 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker32	 of 100	x 27 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:03 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker33	 of 100	x 93 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:03 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker33	 of 100	x 79 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:03 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker34	 of 100	x 16 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:03 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker34	 of 100	x 78 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:03 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker35	 of 100	x 39 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:03 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker35	 of 100	x 1 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:03 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker36	 of 100	x 58 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:04 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker36	 of 100	x 57 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:04 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker37	 of 100	x 40 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:04 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker37	 of 100	x 52 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:04 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker38	 of 100	x 21 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:04 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker38	 of 100	x 24 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:04 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker39	 of 100	x 99 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:04 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker39	 of 100	x 67 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker40	 of 100	x 28 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker40	 of 100	x 39 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker41	 of 100	x 35 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker41	 of 100	x 19 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker42	 of 100	x 78 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker42	 of 100	x 52 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker43	 of 100	x 25 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker43	 of 100	x 29 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker44	 of 100	x 3 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:05 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker44	 of 100	x 91 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:06 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker45	 of 100	x 60 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:06 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker45	 of 100	x 0 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:06 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker46	 of 100	x 85 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:06 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker46	 of 100	x 85 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:06 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker47	 of 100	x 72 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:07 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker47	 of 100	x 86 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:07 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker48	 of 100	x 12 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:07 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker48	 of 100	x 17 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:07 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker49	 of 100	x 65 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:07 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker49	 of 100	x 80 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:07 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker50	 of 100	x 47 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:07 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker50	 of 100	x 56 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:08 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker51	 of 100	x 33 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:08 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker51	 of 100	x 5 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:08 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker52	 of 100	x 65 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:08 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker52	 of 100	x 74 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:08 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker53	 of 100	x 10 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:08 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker53	 of 100	x 87 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:08 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker54	 of 100	x 50 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:09 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker54	 of 100	x 9 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:09 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker55	 of 100	x 54 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:09 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker55	 of 100	x 78 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:09 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker56	 of 100	x 0 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:09 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker56	 of 100	x 41 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:09 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker57	 of 100	x 98 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:09 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker57	 of 100	x 31 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:09 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker58	 of 100	x 93 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:10 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker58	 of 100	x 75 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:10 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker59	 of 100	x 60 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:10 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker59	 of 100	x 49 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:10 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker60	 of 100	x 66 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:10 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker60	 of 100	x 73 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:11 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker61	 of 100	x 49 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:11 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker61	 of 100	x 3 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:11 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker62	 of 100	x 58 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:11 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker62	 of 100	x 73 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:11 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker63	 of 100	x 89 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:11 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker63	 of 100	x 23 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:12 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker64	 of 100	x 42 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:12 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker64	 of 100	x 6 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:12 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker65	 of 100	x 55 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:12 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker65	 of 100	x 90 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:12 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker66	 of 100	x 14 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:12 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker66	 of 100	x 89 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:12 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker67	 of 100	x 95 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:13 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker67	 of 100	x 79 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:13 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker68	 of 100	x 15 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:13 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker68	 of 100	x 5 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:13 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker69	 of 100	x 18 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:13 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker69	 of 100	x 65 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:13 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker70	 of 100	x 66 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:13 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker70	 of 100	x 25 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:13 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker71	 of 100	x 43 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:14 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker71	 of 100	x 67 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:14 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker72	 of 100	x 66 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:14 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker72	 of 100	x 41 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:14 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker73	 of 100	x 98 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:14 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker73	 of 100	x 12 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:14 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker74	 of 100	x 68 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:15 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker74	 of 100	x 58 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:15 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker75	 of 100	x 61 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:15 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker75	 of 100	x 34 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:15 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker76	 of 100	x 31 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:15 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker76	 of 100	x 62 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:15 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker77	 of 100	x 89 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:15 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker77	 of 100	x 42 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:16 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker78	 of 100	x 87 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:16 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker78	 of 100	x 78 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:16 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker79	 of 100	x 65 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:16 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker79	 of 100	x 29 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:16 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker80	 of 100	x 84 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:17 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker80	 of 100	x 20 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:17 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker81	 of 100	x 71 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:17 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker81	 of 100	x 98 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:17 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker82	 of 100	x 61 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:17 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker82	 of 100	x 19 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:17 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker83	 of 100	x 30 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:17 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker83	 of 100	x 76 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:18 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker84	 of 100	x 76 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:18 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker84	 of 100	x 48 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:18 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker85	 of 100	x 41 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:18 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker85	 of 100	x 43 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:18 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker86	 of 100	x 73 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:19 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker86	 of 100	x 85 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:19 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker87	 of 100	x 10 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:19 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker87	 of 100	x 92 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:19 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker88	 of 100	x 78 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:19 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker88	 of 100	x 60 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:19 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker89	 of 100	x 56 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:20 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker89	 of 100	x 47 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:20 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker90	 of 100	x 70 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:20 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker90	 of 100	x 69 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:20 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker91	 of 100	x 33 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:20 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker91	 of 100	x 2 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:20 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker92	 of 100	x 83 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:20 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker92	 of 100	x 23 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:21 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker93	 of 100	x 96 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:21 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker93	 of 100	x 22 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:21 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker94	 of 100	x 1 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:21 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker94	 of 100	x 13 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:21 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker95	 of 100	x 3 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:21 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker95	 of 100	x 38 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:21 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker96	 of 100	x 85 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:21 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker96	 of 100	x 75 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker97	 of 100	x 88 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker97	 of 100	x 47 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker98	 of 100	x 94 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker98	 of 100	x 18 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker99	 of 100	x 23 :	 read register 6
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [169]	DTC0_ROC0_Tracker99	 of 100	x 70 :	 read register 7
+%MSG
+%MSG-d FE-ROCCoreVInterface:  Early 30-Apr-2019 12:38:22 CDT pre-events
+otsdaq_mu2e/otsdaq-mu2e/ROCCore/ROCCoreVInterface.cc [190]	DTC0_ROC0_TrackerCompleted high rate check. Number of reads: 10562, firstRegCnt=5464, secondRegcnt=5098
+%MSG
