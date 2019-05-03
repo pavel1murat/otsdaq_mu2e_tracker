@@ -3,8 +3,8 @@
 		xmlns:soapenc	= "http://schemas.xmlsoap.org/soap/encoding/"
 		xmlns:xc	= "http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
 
-	<!-- ContextUID='mainContext' sourceConfig='XDAQContextTable_v4 @ 1556052794' -->
-	<xc:Context id="0" url="http://mu2edaq06.fnal.gov:3025">
+	<!-- ContextUID='mainContext' sourceConfig='XDAQContextTable_v7 @ 1556227853' -->
+	<xc:Context id="0" url="http://mu2edaq09:3015">
 
 		<!-- Application GroupID = 'mainContext' UID='Supervisor' sourceConfig='XDAQApplicationTable_v2 @ 1551877632' -->
 		<xc:Application class="ots::GatewaySupervisor" id="200" instance="1" network="local" group="daq">
@@ -57,10 +57,10 @@
 
 	</xc:Context>
 
-	<!-- ContextUID='ContextDTC0' sourceConfig='XDAQContextTable_v4 @ 1556052794' -->
-	<!--
-	<xc:Context id="0" url="http://mu2edaq05.fnal.gov:3027">
+	<!-- ContextUID='ContextDTC0' sourceConfig='XDAQContextTable_v7 @ 1556227853' -->
+	<xc:Context id="0" url="http://mu2edaq09:3017">
 
+		<!-- Application GroupID = 'ContextDTC0' UID='FESupervisorDTC0' sourceConfig='XDAQApplicationTable_v2 @ 1551877632' -->
 		<xc:Application class="ots::FESupervisor" id="311" instance="1" network="local" group="daq">
 			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
 			</properties>
@@ -68,11 +68,10 @@
 		<xc:Module>/home/mu2etrk/test_stand/ots/build_slf7.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
 
 	</xc:Context>
-	-->
 
-	<!-- ContextUID='ContextCFO0' sourceConfig='XDAQContextTable_v4 @ 1556052794' -->
+	<!-- ContextUID='ContextCFO0' sourceConfig='XDAQContextTable_v7 @ 1556227853' -->
 	<!--
-	<xc:Context id="0" url="http://mu2edaq04.fnal.gov:3026">
+	<xc:Context id="0" url="http://mu2edaq04.fnal.gov:3016">
 
 		<xc:Application class="ots::FESupervisor" id="210" instance="1" network="local" group="daq">
 			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
@@ -83,10 +82,10 @@
 	</xc:Context>
 	-->
 
-	<!-- ContextUID='ContextDTC1' sourceConfig='XDAQContextTable_v4 @ 1556052794' -->
-	<xc:Context id="0" url="http://mu2edaq06.fnal.gov:3028">
+	<!-- ContextUID='ContextDTC1' sourceConfig='XDAQContextTable_v7 @ 1556227853' -->
+	<!--
+	<xc:Context id="0" url="mu2edaq09:3018">
 
-		<!-- Application GroupID = 'ContextDTC1' UID='FESupervisorDTC1' sourceConfig='XDAQApplicationTable_v2 @ 1551877632' -->
 		<xc:Application class="ots::FESupervisor" id="312" instance="1" network="local" group="daq">
 			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">
 			</properties>
@@ -94,10 +93,11 @@
 		<xc:Module>/home/mu2etrk/test_stand/ots/build_slf7.x86_64/otsdaq/lib/libCoreSupervisors.so</xc:Module>
 
 	</xc:Context>
+	-->
 
-	<!-- ContextUID='ContextCAPTAN0' sourceConfig='XDAQContextTable_v4 @ 1556052794' -->
+	<!-- ContextUID='ContextCAPTAN0' sourceConfig='XDAQContextTable_v7 @ 1556227853' -->
 	<!--
-	<xc:Context id="0" url="http://mu2edaq06.fnal.gov:3029">
+	<xc:Context id="0" url="http://mu2edaq06.fnal.gov:3019">
 
 		<xc:Application class="ots::FESupervisor" id="313" instance="1" network="local" group="daq">
 			<properties xmlns="urn:xdaq-application:FESupervisor" xsi:type="soapenc:Struct">

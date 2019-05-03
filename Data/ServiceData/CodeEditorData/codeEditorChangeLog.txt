@@ -771,3 +771,16 @@ time=1554217217 authoradmin old-size=1175 new-size=1176 path=/home/mu2edaq/sync_
 time=1554217293 authoradmin old-size=1176 new-size=1247 path=/home/mu2edaq/sync_demo/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface.h
 time=1554221278 authoradmin old-size=4156 new-size=4376 path=/home/mu2edaq/sync_demo/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc
 time=1554221426 authoradmin old-size=4376 new-size=4374 path=/home/mu2edaq/sync_demo/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc
+time=1556552780 authoradmin old-size=1349 new-size=1392 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface.h
+time=1556553565 authoradmin old-size=6578 new-size=6879 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc
+time=1556553724 authoradmin old-size=6879 new-size=7064 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc
+time=1556555479 authoradmin old-size=7064 new-size=7177 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc
+time=1556555543 authoradmin old-size=1392 new-size=1430 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface.h
+time=1556556509 authoradmin old-size=7177 new-size=7224 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc
+time=1556557075 authoradmin old-size=84747 new-size=84807 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc
+time=1556813680 authoradmin old-size=86950 new-size=86948 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc
+time=1556816994 authoradmin old-size=12826 new-size=12931 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc
+time=1556817068 authoradmin old-size=12931 new-size=12936 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc
+time=1556817142 authoradmin old-size=12936 new-size=12941 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc
+time=1556817229 authoradmin old-size=12941 new-size=12998 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc
+time=1556818435 authoradmin old-size=12998 new-size=13043 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc

@@ -22,6 +22,10 @@ public:
 	virtual int readEmulatorRegister(unsigned address) override;
 
 	virtual void configure(void) override;
+	virtual void start(std::string) override;
+	virtual bool running(void) override;
+	virtual void stop(void) override;
+
 
 	bool emulatorWorkLoop(void) override;
 
@@ -50,6 +54,13 @@ public:
 	private:
 		unsigned int TrackerParameter_1_;
 		bool TrackerParameter_2_;
+
+		unsigned int number_of_good_events_;
+		unsigned int number_of_bad_events_;
+		unsigned int number_of_empty_events_;
+		std::ofstream datafile_;
+		unsigned int event_number_;
+
   public:
 	void ReadTrackerFIFO(__ARGS__);
 
