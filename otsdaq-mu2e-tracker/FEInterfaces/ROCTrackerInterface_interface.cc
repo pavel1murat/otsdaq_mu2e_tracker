@@ -245,7 +245,7 @@ bool ROCTrackerInterface::running(void) {
 	  //readBlock(val, 42 , FIFOdepth, 0);
 	  readBlock(val, 42 , depth_to_read, 0);
 
-	  if (abs( val.size() - depth_to_read) < 0.5) {
+	  if (abs(float( val.size() - depth_to_read)) < 0.5f) {
 	      
 	    for(size_t rr = 0; rr < val.size(); rr++)
 	      {
