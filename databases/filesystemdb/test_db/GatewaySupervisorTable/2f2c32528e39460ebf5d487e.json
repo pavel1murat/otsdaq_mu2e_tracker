@@ -192,6 +192,78 @@
 "name" : "testContext_v11",
 "assigned" : "2019-04-26T08:59:43.628-0500"
 }
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-05-29T10:37:56.268-0500",
+"value" : {
+"name" : "testContext_v12",
+"assigned" : "2019-05-29T10:37:56.268-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-05-29T10:53:44.989-0500",
+"value" : {
+"name" : "testContext_v13",
+"assigned" : "2019-05-29T10:53:44.989-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-05-29T10:59:47.973-0500",
+"value" : {
+"name" : "testContext_v14",
+"assigned" : "2019-05-29T10:59:47.973-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-06-03T15:14:28.736-0500",
+"value" : {
+"name" : "testContext_v15",
+"assigned" : "2019-06-03T15:14:28.736-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-06-03T15:33:15.921-0500",
+"value" : {
+"name" : "testContext_v16",
+"assigned" : "2019-06-03T15:33:15.921-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-06-05T17:00:06.120-0500",
+"value" : {
+"name" : "testContext_v17",
+"assigned" : "2019-06-05T17:00:06.120-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-06-05T17:03:06.764-0500",
+"value" : {
+"name" : "testContext_v18",
+"assigned" : "2019-06-05T17:03:06.764-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-06-05T17:08:16.758-0500",
+"value" : {
+"name" : "testContext_v19",
+"assigned" : "2019-06-05T17:08:16.757-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-06-05T17:32:16.853-0500",
+"value" : {
+"name" : "testContext_v20",
+"assigned" : "2019-06-05T17:32:16.853-0500"
+}
 }
 ],
 "created" : "2019-04-08T12:35:14.722-0500"
@@ -251,6 +323,42 @@
 {
 "name" : "testContext_v11",
 "assigned" : "2019-04-26T08:59:43.628-0500"
+},
+{
+"name" : "testContext_v12",
+"assigned" : "2019-05-29T10:37:56.268-0500"
+},
+{
+"name" : "testContext_v13",
+"assigned" : "2019-05-29T10:53:44.989-0500"
+},
+{
+"name" : "testContext_v14",
+"assigned" : "2019-05-29T10:59:47.973-0500"
+},
+{
+"name" : "testContext_v15",
+"assigned" : "2019-06-03T15:14:28.736-0500"
+},
+{
+"name" : "testContext_v16",
+"assigned" : "2019-06-03T15:33:15.921-0500"
+},
+{
+"name" : "testContext_v17",
+"assigned" : "2019-06-05T17:00:06.120-0500"
+},
+{
+"name" : "testContext_v18",
+"assigned" : "2019-06-05T17:03:06.764-0500"
+},
+{
+"name" : "testContext_v19",
+"assigned" : "2019-06-05T17:08:16.757-0500"
+},
+{
+"name" : "testContext_v20",
+"assigned" : "2019-06-05T17:32:16.853-0500"
 }
 ]
 }

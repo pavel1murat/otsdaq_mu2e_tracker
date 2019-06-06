@@ -184,11 +184,12 @@ catch(...)
 //========================================================================================================================
 void ROCTrackerInterface::start(std::string runNumber)
 {
-	
+  std::cout << "TRK Inside start, opening data file " << std::endl;	
   std::stringstream filename;
   filename << "/home/mu2etrk/test_stand/ots/Run" << runNumber << ".txt";
   std::string filenamestring = filename.str();
   datafile_.open(filenamestring);
+  std::cout << "TRK Data file opened " << filenamestring << std::endl;	
 
   number_of_good_events_ = 0;
   number_of_bad_events_ = 0;
@@ -215,6 +216,7 @@ bool ROCTrackerInterface::running(void) {
 	unsigned FIFOdepth = 0;
 	FIFOdepth = readRegister(35);
 
+        std::cout << "TRK FIFOdepth " << FIFOdepth << " Event number " << event_number_ << std::endl;	
 
 	unsigned counter = 0;    // don't wait forever
 	    
