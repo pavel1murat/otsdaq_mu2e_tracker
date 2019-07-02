@@ -7,8 +7,11 @@
 
 #include "otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface.h"
 
-namespace ots {
-class ROCTrackerInterface : public ROCPolarFireCoreInterface {
+namespace ots
+{
+class ROCTrackerInterface : public ROCPolarFireCoreInterface
+{
+	// clang-format off
 public:
   	ROCTrackerInterface(const std::string &rocUID,
 						const ConfigurationTree &theXDAQContextConfigTree,
@@ -16,15 +19,17 @@ public:
 
 	~ROCTrackerInterface(void);
 
-	// write and read to registers
-	virtual void writeEmulatorRegister(unsigned address,
-										unsigned data_to_write) override;
-	virtual int readEmulatorRegister(unsigned address) override;
+	// state machine
+  	//----------------
+  	void 									configure				(void) override;
+  	void 									start					(std::string runNumber) override;
+  	void 									stop					(void) override;
+  	bool 									running					(void) override;
 
-	virtual void configure(void) override;
-	virtual void start(std::string) override;
-	virtual bool running(void) override;
-	virtual void stop(void) override;
+  	// write and read to registers
+  	virtual void 							writeEmulatorRegister	(uint16_t address, uint16_t data_to_write) override;
+  	virtual int 							readEmulatorRegister	(uint16_t address) override;
+
 
 
 	bool emulatorWorkLoop(void) override;
@@ -64,8 +69,9 @@ public:
   public:
 	void ReadTrackerFIFO(__ARGS__);
 
+	// clang-format on
 };
 
-} // namespace ots
+}  // namespace ots
 
 #endif
