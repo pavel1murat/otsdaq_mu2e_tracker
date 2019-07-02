@@ -139,7 +139,7 @@ void ROCTrackerInterface::writeEmulatorRegister(uint16_t address, uint16_t data_
 }  // end writeRegister()
 
 //==================================================================================================
-int ROCTrackerInterface::readEmulatorRegister(uint16_t address)
+uint16_t ROCTrackerInterface::readEmulatorRegister(uint16_t address)
 {
 	__CFG_COUT__ << "Tracker emulator read" << __E__;
 
@@ -148,7 +148,7 @@ int ROCTrackerInterface::readEmulatorRegister(uint16_t address)
 	else if(address == ADDRESS_MYREGISTER)
 		return temp1_.GetBoardTempC();
 	else
-		return -1;
+		return 0xBAAD;
 
 }  // end readRegister()
 

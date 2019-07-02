@@ -28,7 +28,7 @@ public:
 
   	// write and read to registers
   	virtual void 							writeEmulatorRegister	(uint16_t address, uint16_t data_to_write) override;
-  	virtual int 							readEmulatorRegister	(uint16_t address) override;
+  	virtual uint16_t						readEmulatorRegister	(uint16_t address) override;
 
 
 
