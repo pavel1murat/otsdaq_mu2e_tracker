@@ -64,7 +64,7 @@
 "assigned" : "2019-04-26T08:59:43.148-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-04-26T08:59:43.148-0500"
@@ -116,7 +116,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-26T08:59:43.148-0500",
 "value" : {
 "name" : "notprovided",
@@ -148,7 +148,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-26T08:59:43.652-0500",
 "value" : {
 "name" : "testContext_v11",
@@ -156,7 +156,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-05-29T10:37:56.368-0500",
 "value" : {
 "name" : "testContext_v12",
@@ -164,7 +164,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-05-29T10:53:45.066-0500",
 "value" : {
 "name" : "testContext_v13",
@@ -172,7 +172,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-05-29T10:59:48.083-0500",
 "value" : {
 "name" : "testContext_v14",
@@ -180,7 +180,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-03T15:14:28.820-0500",
 "value" : {
 "name" : "testContext_v15",
@@ -188,7 +188,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-03T15:33:15.988-0500",
 "value" : {
 "name" : "testContext_v16",
@@ -196,7 +196,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-05T17:00:06.220-0500",
 "value" : {
 "name" : "testContext_v17",
@@ -204,7 +204,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-05T17:03:06.883-0500",
 "value" : {
 "name" : "testContext_v18",
@@ -212,7 +212,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-05T17:08:16.867-0500",
 "value" : {
 "name" : "testContext_v19",
@@ -220,11 +220,19 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-05T17:32:16.916-0500",
 "value" : {
 "name" : "testContext_v20",
 "assigned" : "2019-06-05T17:32:16.916-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-09T12:25:45.202-0500",
+"value" : {
+"name" : "testContext_v21",
+"assigned" : "2019-07-09T12:25:45.202-0500"
 }
 }
 ],
@@ -248,5 +256,11 @@
 "attachments" : [
 
 ],
-"configtype" : "notprovided"
+"configtype" : "notprovided",
+"configurations" : [
+{
+"name" : "testContext_v21",
+"assigned" : "2019-07-09T12:25:45.202-0500"
+}
+]
 }

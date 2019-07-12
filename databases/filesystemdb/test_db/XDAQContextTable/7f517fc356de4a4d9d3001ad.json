@@ -112,7 +112,7 @@
 "assigned" : "2019-06-03T15:14:27.140-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-06-03T15:14:27.139-0500"
@@ -128,7 +128,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-03T15:14:27.140-0500",
 "value" : {
 "name" : "notprovided",
@@ -160,7 +160,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-03T15:14:29.398-0500",
 "value" : {
 "name" : "testContext_v15",

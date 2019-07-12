@@ -43,15 +43,15 @@ ROCTrackerInterface::ROCTrackerInterface(
 	    std::vector<std::string>{},                           // output parameters
 	    1);                                                   // requiredUserPermissions
 
-	// try {
-	//  inputTemp_ = getSelfNode().getNode("inputTemperature").getValue<double>();
-	//} catch (...) {
-	//  __CFG_COUT__ << "inputTemperature field not defined. Defaulting..."
-	//               << __E__;
-	//  inputTemp_ = 15.;
-	//}
+	 try {
+	  inputTemp_ = getSelfNode().getNode("inputTemperature").getValue<double>();
+	} catch (...) {
+	  __CFG_COUT__ << "inputTemperature field not defined. Defaulting..."
+	               << __E__;
+	  inputTemp_ = 15.;
+	}
 
-	// temp1_.noiseTemp(inputTemp_);
+	 temp1_.noiseTemp(inputTemp_);
 }
 void ROCTrackerInterface::ReadTrackerFIFO(__ARGS__)
 {
@@ -136,21 +136,48 @@ void ROCTrackerInterface::writeEmulatorRegister(uint16_t address, uint16_t data_
 
 	return;
 
-}  // end writeRegister()
+}  // end writeEmulatorRegister()
 
 //==================================================================================================
 uint16_t ROCTrackerInterface::readEmulatorRegister(uint16_t address)
 {
 	__CFG_COUT__ << "Tracker emulator read" << __E__;
 
+        if(address == 6 || address == 7)
+		return ROCPolarFireCoreInterface::readEmulatorRegister(address);	
 	if(address == ADDRESS_FIRMWARE_VERSION)
 		return 0x5;
 	else if(address == ADDRESS_MYREGISTER)
 		return temp1_.GetBoardTempC();
 	else
-		return 0xBAAD;
+		return 0xBAFD;
 
-}  // end readRegister()
+}  // end readEmulatorRegister()
+
+//==================================================================================================
+void ROCTrackerInterface::readEmulatorBlock(std::vector<uint16_t>& 	data,
+						uint16_t 		address,
+						uint16_t		wordCount,
+						bool			incrementAddress)
+{
+	__CFG_COUT__ << "Tracker emulator block read " << "wordCount= "<<wordCount<< __E__;
+//	uint16_t array[];
+//        *data(array,array+sizeof(array)/sizeof(array[0]));
+//	uint16_t ii=0;
+//	for (ii = 0; ii<wordCount;ii++)
+//       {
+//	   __CFG_COUT__ << "data loaded: "<<ii<< __E__;
+//	  data.push_back(ii);
+//        }
+//        if (incrementAddress) address=address+ii;
+
+
+
+	for(unsigned int i=0;i<wordCount;++i)
+		data.push_back(address + (incrementAddress?i:0));
+		
+}  // end readEmulatorBlock()
+
 
 //==================================================================================================
 void ROCTrackerInterface::configure(void) try

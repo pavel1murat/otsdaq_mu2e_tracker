@@ -50,7 +50,7 @@
 "assigned" : "2019-04-25T16:58:24.716-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-04-25T16:58:24.716-0500"
@@ -70,7 +70,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-25T16:58:24.716-0500",
 "value" : {
 "name" : "notprovided",
@@ -102,7 +102,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-25T16:58:25.025-0500",
 "value" : {
 "name" : "TableEditWizBackbone_v7",
@@ -110,7 +110,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-26T10:48:02.628-0500",
 "value" : {
 "name" : "GroupAliasWizBackbone_v0",

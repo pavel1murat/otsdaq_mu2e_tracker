@@ -139,7 +139,7 @@
 "assigned" : "2019-05-29T10:45:16.390-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-05-29T10:45:16.390-0500"
@@ -163,7 +163,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-05-29T10:45:16.390-0500",
 "value" : {
 "name" : "notprovided",
@@ -195,7 +195,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-05-29T10:45:18.362-0500",
 "value" : {
 "name" : "defaultConfig_v9",
@@ -203,7 +203,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-05-29T10:47:29.057-0500",
 "value" : {
 "name" : "defaultConfig_v10",
@@ -211,7 +211,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-05-29T10:55:22.589-0500",
 "value" : {
 "name" : "defaultConfig_v11",

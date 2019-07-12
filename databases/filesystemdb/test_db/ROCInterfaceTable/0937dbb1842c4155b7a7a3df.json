@@ -216,7 +216,7 @@
 "assigned" : "2019-04-30T15:22:10.582-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-04-30T15:22:10.581-0500"
@@ -256,7 +256,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-30T15:22:10.581-0500",
 "value" : {
 "name" : "notprovided",
@@ -288,7 +288,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-30T15:22:12.237-0500",
 "value" : {
 "name" : "defaultConfig_v7",
@@ -296,7 +296,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-05-29T10:40:53.198-0500",
 "value" : {
 "name" : "defaultConfig_v8",
@@ -304,7 +304,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-05-29T10:45:18.913-0500",
 "value" : {
 "name" : "defaultConfig_v9",
@@ -312,7 +312,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-05T16:56:03.687-0500",
 "value" : {
 "name" : "defaultConfig_v14",
@@ -320,7 +320,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-05T17:15:28.624-0500",
 "value" : {
 "name" : "defaultConfig_v18",
@@ -328,7 +328,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-05T17:21:30.067-0500",
 "value" : {
 "name" : "defaultConfig_v19",
@@ -336,11 +336,27 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-05T18:37:22.263-0500",
 "value" : {
 "name" : "defaultConfig_v20",
 "assigned" : "2019-06-05T18:37:22.263-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-09T12:19:16.060-0500",
+"value" : {
+"name" : "defaultConfig_v21",
+"assigned" : "2019-07-09T12:19:16.060-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-10T14:35:35.341-0500",
+"value" : {
+"name" : "defaultConfig_v22",
+"assigned" : "2019-07-10T14:35:35.341-0500"
 }
 }
 ],
@@ -364,5 +380,15 @@
 "attachments" : [
 
 ],
-"configtype" : "notprovided"
+"configtype" : "notprovided",
+"configurations" : [
+{
+"name" : "defaultConfig_v21",
+"assigned" : "2019-07-09T12:19:16.060-0500"
+},
+{
+"name" : "defaultConfig_v22",
+"assigned" : "2019-07-10T14:35:35.341-0500"
+}
+]
 }
