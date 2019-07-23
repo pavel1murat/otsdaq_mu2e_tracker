@@ -72,18 +72,9 @@ void ROCTrackerInterface::ReadTrackerFIFO(__ARGS__)
 
 	__FE_COUTV__(NumberOfTimesToReadFIFO);
 
-	std::ofstream datafile;
-
-	std::stringstream filename;
-	filename << "/home/mu2ehwdev/test_stand/ots/tracker_data.txt";
-	std::string filenamestring = filename.str();
-	datafile.open(filenamestring);
 
 	for(unsigned i = 0; i < NumberOfTimesToReadFIFO; i++)
 	{
-		datafile << "============" << std::endl;
-		datafile << "Read FIFO " << std::dec << i << " times..." << std::endl;
-		datafile << "============" << std::endl;
 
 		unsigned FIFOdepth = 0;
 		unsigned counter   = 0;  // don't wait forever
@@ -96,24 +87,8 @@ void ROCTrackerInterface::ReadTrackerFIFO(__ARGS__)
 			counter++;
 		}
 
-		if(FIFOdepth > 0)
-		{
-			// writeRegister(0x42,1);
-			for(unsigned j = 0; j < FIFOdepth; j++)
-			{
-				datafile << "0x" << std::hex << readRegister(0x42) << "  -  " << std::dec
-				         << j << std::endl;
-			}
-		}
-		else
-		{
-			datafile << "... no data..." << std::endl;
-		}
-
-		datafile << "=================================================" << std::endl;
 	}
 
-	datafile.close();
 
 	for(auto& argOut : argsOut)
 		__FE_COUT__ << argOut.first << ": " << argOut.second << __E__;
@@ -161,21 +136,16 @@ void ROCTrackerInterface::readEmulatorBlock(std::vector<uint16_t>& 	data,
 						bool			incrementAddress)
 {
 	__CFG_COUT__ << "Tracker emulator block read " << "wordCount= "<<wordCount<< __E__;
-//	uint16_t array[];
-//        *data(array,array+sizeof(array)/sizeof(array[0]));
-//	uint16_t ii=0;
-//	for (ii = 0; ii<wordCount;ii++)
-//       {
-//	   __CFG_COUT__ << "data loaded: "<<ii<< __E__;
-//	  data.push_back(ii);
-//        }
-//        if (incrementAddress) address=address+ii;
 
+// make up some bogus data. Right now hardwired, could be read in as a parameter...
+    double input_data = 15;  
 
-
-	for(unsigned int i=0;i<wordCount;++i)
-		data.push_back(address + (incrementAddress?i:0));
-		
+	for(unsigned int i=0;i<wordCount;++i) {
+          	double rand_data = input_data + 0.5 * (input_data * (((double)rand() / (RAND_MAX)) - 0.5));
+	  	__CFG_COUT__ << "rand_data= "<<rand_data<< __E__;
+		data.push_back(rand_data);
+//		data.push_back(address + (incrementAddress?i:0));
+}		
 }  // end readEmulatorBlock()
 
 
@@ -230,9 +200,6 @@ bool ROCTrackerInterface::running(void)
 		__MCOUT_INFO__("Running event number " << std::dec << event_number_ << __E__);
 	}
 
-	datafile_ << "# Event " << event_number_;
-
-	int fail = 0;
 
 	std::vector<uint16_t> val;
 
@@ -257,75 +224,14 @@ bool ROCTrackerInterface::running(void)
 
 	if(FIFOdepth > 0 && FIFOdepth != 65535)
 	{
-		unsigned depth_to_read = 200;
-		if(FIFOdepth < depth_to_read)
-		{
-			depth_to_read = FIFOdepth;
-		}
 
-		datafile_ << " ==> FIFOdepth = " << FIFOdepth
-		          << "... Number of words to read = " << depth_to_read << std::endl;
 
-		// readBlock(val, 42 , FIFOdepth, 0);
-		readBlock(val, 42, depth_to_read, 0);
+		readBlock(val, 42 , FIFOdepth, 0);
 
-		if(abs(float(val.size() - depth_to_read)) < 0.5f)
-		{
-			for(size_t rr = 0; rr < val.size(); rr++)
-			{
-				if((rr + 1) % 5 == 0)
-				{
-					datafile_ << " " << std::hex << val[rr] << std::dec << std::endl;
-				}
-				else
-				{
-					datafile_ << " " << std::hex << val[rr] << std::dec;
-				}
-
-				// check for data integrity here...
-				//	    if(val[rr] != correct[j])
-				//	      {
-				//	    	      fail++;
-				//	    	      __MCOUT__("... fail on read " << rr
-				//	    			<< ":  read = " << val[rr]
-				//	    			<< ", expected = " << correct[j] << __E__);
-				//	    	      // __SS__ << roc->interfaceUID_ << i << "\tx " << r << "
-				//:\t "
-				//	    //	    //	    //	    //	    //	    //	    //	    //
-				////	   << "read register " << baseAddress + j << ". Mismatch on read "
-				//<< val[rr]
-				//	   << " vs " << correct[j] << ". Read failed on read number "
-				//	   << cnt << __E__;
-				//__MOUT__ << ss.str();
-				//__SS_THROW__;
-				//	    	    }
-			}
-		}
-		else
-		{
-			datafile_ << "# ERROR --> Number of words returned by DTC = " << val.size()
-			          << std::endl;
-
-			fail++;
-
-			//	    __MCOUT__("... DTC returns " << val.size() << " words instead of "
-			//	  		<< r << "... punt on this event" << __E__);
-		}
 	}
 	else
 	{
-		datafile_ << std::endl
-		          << "# EMPTY... FIFO did not report data for this event " << std::endl;
 		number_of_empty_events_++;
-	}
-
-	if(fail > 0)
-	{
-		number_of_bad_events_++;
-	}
-	else
-	{
-		number_of_good_events_++;
 	}
 
 	if(0)
@@ -344,71 +250,6 @@ bool ROCTrackerInterface::running(void)
 			data_to_check = readRegister(0x7);
 		}
 	}
-
-	//		unsigned int          r;
-	//       	//int          loops  = loops;//10 * 1000;
-	//	int          cnt    = 0;
-	//	int          cnts[] = {0, 0};
-	//
-	//	int baseAddress = 6;
-	//	unsigned int correctRegisterValue0 = 4860;
-	//	unsigned int correctRegisterValue1 = delay_;
-	//
-	//	unsigned int correct[] = {correctRegisterValue0,correctRegisterValue1};//{4860,
-	//10};
-	//
-	//	for(unsigned int j = 0; j < 2; j++)
-	//	  {
-	//	    r = (rand() % 100) + 1;  //avoid calling block reads "0" times by adding 1
-	//
-	//	    //__MCOUT__(interfaceUID_ << " :\t read register " << baseAddress + j
-	//	      << " " << r << " times" << __E__);
-	//
-	//	    readBlock(val, baseAddress + j,r,0);
-	//
-	//	    datafile_ << " ==> Number of expected words = " << r << std::endl;
-	//
-	//	    int fail = 0;
-
-	//	    if (abs( val.size() - r) < 0.5) {
-	//
-	//	      for(size_t rr = 0; rr < val.size(); rr++)
-	//	      {
-	//	        ++cnt;
-	//	    	  ++cnts[j];
-	//
-	//	    	  if ( (rr+1)%5 == 0) {
-	//	    	    datafile_ << std::hex << val[rr] << std::endl;
-	//	    	  } else {
-	//	    	    datafile_ << std::hex << val[rr];
-	//	    	  }
-	//
-	//	    	  if(val[rr] != correct[j])
-	//	    	    {
-	//	    	      fail++;
-	//	    	      __MCOUT__("... fail on read " << rr
-	//	    			<< ":  read = " << val[rr]
-	//	    			<< ", expected = " << correct[j] << __E__);
-	//	    	      // __SS__ << roc->interfaceUID_ << i << "\tx " << r << " :\t "
-	//	    //	    //	    //	    //	    //	    //	    //	    //	    	      //
-	//<< "read register " << baseAddress + j << ". Mismatch on read " << val[rr]
-	//	   << " vs " << correct[j] << ". Read failed on read number "
-	//	   << cnt << __E__;
-	//__MOUT__ << ss.str();
-	//__SS_THROW__;
-	//	    	    }
-	//	    	}
-	//	  } else {
-	//
-	//	    datafile_ << "#ERROR --> Number of words returned by DTC = " << val.size() <<
-	//std::endl;
-	//
-	//	    fail++;
-	//
-	//	    __MCOUT__("... DTC returns " << val.size() << " words instead of "
-	//	    		<< r << "... punt on this event" << __E__);
-	//
-	//	  }
 
 	return false;
 }
