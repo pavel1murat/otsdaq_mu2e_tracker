@@ -6,6 +6,8 @@
 #include <string>
 
 #include "otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface.h"
+#include "otsdaq-core/DataManager/DataProducer.h"
+#include "otsdaq-core/FECore/FEProducerVInterface.h"
 
 namespace ots
 {
@@ -48,7 +50,7 @@ public:
   		public:
     		void noiseTemp(double intemp) {
       			mnoiseTemp = (double)intemp +
-                   0.05 * (intemp * ((double)rand() / (RAND_MAX)) - 0.5);
+                   0.5 * (intemp * ((double)rand() / (RAND_MAX)) - 0.5);
       			return;
     		}
     		double GetBoardTempC() { return mnoiseTemp; }

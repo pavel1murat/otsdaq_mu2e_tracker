@@ -1,8 +1,11 @@
 #include "otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface.h"
+#include "otsdaq-core/DataManager/DataProducer.h"
+#include "otsdaq-core/DataManager/RawDataSaverConsumerBase.h"
 
 #include "otsdaq-core/Macros/InterfacePluginMacros.h"
 
 using namespace ots;
+
 
 #undef __MF_SUBJECT__
 #define __MF_SUBJECT__ "FE-ROCTrackerInterface"
@@ -28,16 +31,12 @@ ROCTrackerInterface::ROCTrackerInterface(
 
 	TrackerParameter_2_ = rocTypeLink.getNode("TrueFalseParam2").getValue<bool>();
 
-	// std::string STMParameter_3 =
-	// rocTypeLink.getNode("STMMustBeUniqueParam1").getValue<std::string>();
-
 	__FE_COUTV__(TrackerParameter_1_);
 	__FE_COUTV__(TrackerParameter_2_);
-	//    __FE_COUTV__(STMParameter_3);
 
 	registerFEMacroFunction(
 	    "ReadROCTrackerFIFO",
-	    static_cast<FEVInterface::frontEndMacroFunction_t>(
+	    static_cast<FEProducerVInterface::frontEndMacroFunction_t>(
 	        &ROCTrackerInterface::ReadTrackerFIFO),
 	    std::vector<std::string>{"NumberOfTimesToReadFIFO"},  // inputs parameters
 	    std::vector<std::string>{},                           // output parameters
@@ -99,7 +98,7 @@ ROCTrackerInterface::~ROCTrackerInterface(void)
 {
 	// NOTE:: be careful not to call __FE_COUT__ decoration because it uses the
 	// tree and it may already be destructed partially
-	__COUT__ << FEVInterface::interfaceUID_ << " Destructor" << __E__;
+	__COUT__ << FEProducerVInterface::interfaceUID_ << " Destructor" << __E__;
 }
 
 //==================================================================================================
@@ -123,7 +122,7 @@ uint16_t ROCTrackerInterface::readEmulatorRegister(uint16_t address)
 	if(address == ADDRESS_FIRMWARE_VERSION)
 		return 0x5;
 	else if(address == ADDRESS_MYREGISTER)
-		return temp1_.GetBoardTempC();
+	 	return temp1_.GetBoardTempC();
 	else
 		return 0xBAFD;
 
@@ -187,6 +186,11 @@ void ROCTrackerInterface::start(std::string runNumber)
 	number_of_bad_events_   = 0;
 	number_of_empty_events_ = 0;
 	event_number_           = 0;
+
+	//	DataProducerBase::registerToBuffer();
+
+
+
 	return;
 }
 
@@ -200,9 +204,22 @@ bool ROCTrackerInterface::running(void)
 		__MCOUT_INFO__("Running event number " << std::dec << event_number_ << __E__);
 	}
 
+	// make sure we have an empty buffer to put data in.
+	// we may want to try a few times, then return an error
 
+	//	if(DataProducerBase::attachToEmptySubBuffer(dataP_, headerP_) < 0)
+	//{
+	//__CFG_COUT__ << "There are no available buffers! Retrying...after "
+	//			                "waiting 10 milliseconds!"
+	//			             << std::endl;
+	// usleep(10000);
+	// return true;
+	// }
+
+	//
 	std::vector<uint16_t> val;
 
+	// is this really what we want? How do we know how much to read in readblock?
 	unsigned FIFOdepth = 0;
 	FIFOdepth          = readRegister(35);
 
@@ -225,9 +242,29 @@ bool ROCTrackerInterface::running(void)
 	if(FIFOdepth > 0 && FIFOdepth != 65535)
 	{
 
+	  // this is actually DCS values, I think. I'm not sure.
 
+	 
 		readBlock(val, 42 , FIFOdepth, 0);
 
+		std::string* buffer;
+		buffer = FEProducerVInterface::getNextBuffer();
+
+		//std::string        buffer;
+		buffer->resize(8);  // NOTE: this is inexpensive according to
+		                   // Lorenzo/documentation in C++11 (only increases size once
+		                   // and doesn't decrease size)
+		memcpy((void*)buffer /*dest*/, (void*)&val /*src*/, FIFOdepth /*numOfBytes*/);
+
+	    	// size() and length() are equivalent
+		__FE_COUT__ << "Writing to buffer " << buffer->size() << " bytes!" << __E__;
+		__FE_COUT__ << "Writing to buffer length " << buffer->length() << " bytes!"
+		            << __E__;
+
+		__FE_COUT__ << "Buffer Data: "
+		            << BinaryStringMacros::binaryNumberToHexString(*buffer) << __E__;
+
+		FEProducerVInterface::copyToNextBuffer(*buffer);
 	}
 	else
 	{

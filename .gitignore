@@ -22,6 +22,14 @@ bin
 obj
 *.vcxproj*
 Data*/Logs
+Data*/OutputData
 Data*/ServiceData/LoginData/UsersData/TooltipData
 Data*/ServiceData/ProgressBarData
 Data*/ServiceData/Start*.cmd
+Data*/*.bk/
+Databk*/
+.*
+core.*
+databases/filesystemdb/test_dbbk*
+Data/EPICSConfigurations/
+Data/MacroMakerModeConfigurations/

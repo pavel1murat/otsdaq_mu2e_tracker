@@ -876,3 +876,5 @@ time=1562964094 authoradmin old-size=3215 new-size=3202 path=/home/mu2etrk/test_
 time=1562964101 authoradmin old-size=3202 new-size=3192 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq/otsdaq-core/Macros/BinaryStringMacros.icc
 time=1562964195 authoradmin old-size=100571 new-size=100570 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc
 time=1562964251 authoradmin old-size=100570 new-size=100572 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e/otsdaq-mu2e/FEInterfaces/DTCFrontEndInterface_interface.cc
+time=1562966075 authoradmin old-size=13429 new-size=13681 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq_mu2e_tracker/otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface_interface.cc
+time=1564433939 authoradmin old-size=7906 new-size=7964 path=/home/mu2etrk/test_stand/ots/srcs//otsdaq/otsdaq-core/CoreSupervisors/FEDataManagerSupervisor.cc

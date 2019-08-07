@@ -234,6 +234,30 @@
 "name" : "testContext_v21",
 "assigned" : "2019-07-09T12:25:45.202-0500"
 }
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-26T10:47:02.831-0500",
+"value" : {
+"name" : "testContext_v22",
+"assigned" : "2019-07-26T10:47:02.831-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-26T10:56:03.222-0500",
+"value" : {
+"name" : "testContext_v23",
+"assigned" : "2019-07-26T10:56:03.222-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-29T11:01:03.779-0500",
+"value" : {
+"name" : "testContext_v24",
+"assigned" : "2019-07-29T11:01:03.779-0500"
+}
 }
 ],
 "created" : "2019-04-26T08:59:43.147-0500"
@@ -261,6 +285,18 @@
 {
 "name" : "testContext_v21",
 "assigned" : "2019-07-09T12:25:45.202-0500"
+},
+{
+"name" : "testContext_v22",
+"assigned" : "2019-07-26T10:47:02.831-0500"
+},
+{
+"name" : "testContext_v23",
+"assigned" : "2019-07-26T10:56:03.222-0500"
+},
+{
+"name" : "testContext_v24",
+"assigned" : "2019-07-29T11:01:03.779-0500"
 }
 ]
 }
