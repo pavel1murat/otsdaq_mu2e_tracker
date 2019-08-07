@@ -36,7 +36,7 @@ ROCTrackerInterface::ROCTrackerInterface(
 
 	registerFEMacroFunction(
 	    "ReadROCTrackerFIFO",
-	    static_cast<FEProducerVInterface::frontEndMacroFunction_t>(
+	    static_cast<FEVInterface::frontEndMacroFunction_t>(
 	        &ROCTrackerInterface::ReadTrackerFIFO),
 	    std::vector<std::string>{"NumberOfTimesToReadFIFO"},  // inputs parameters
 	    std::vector<std::string>{},                           // output parameters
@@ -98,7 +98,7 @@ ROCTrackerInterface::~ROCTrackerInterface(void)
 {
 	// NOTE:: be careful not to call __FE_COUT__ decoration because it uses the
 	// tree and it may already be destructed partially
-	__COUT__ << FEProducerVInterface::interfaceUID_ << " Destructor" << __E__;
+	__COUT__ << FEVInterface::interfaceUID_ << " Destructor" << __E__;
 }
 
 //==================================================================================================
@@ -244,27 +244,27 @@ bool ROCTrackerInterface::running(void)
 
 	  // this is actually DCS values, I think. I'm not sure.
 
-	 
-		readBlock(val, 42 , FIFOdepth, 0);
-
-		std::string* buffer;
-		buffer = FEProducerVInterface::getNextBuffer();
-
-		//std::string        buffer;
-		buffer->resize(8);  // NOTE: this is inexpensive according to
-		                   // Lorenzo/documentation in C++11 (only increases size once
-		                   // and doesn't decrease size)
-		memcpy((void*)buffer /*dest*/, (void*)&val /*src*/, FIFOdepth /*numOfBytes*/);
-
-	    	// size() and length() are equivalent
-		__FE_COUT__ << "Writing to buffer " << buffer->size() << " bytes!" << __E__;
-		__FE_COUT__ << "Writing to buffer length " << buffer->length() << " bytes!"
-		            << __E__;
-
-		__FE_COUT__ << "Buffer Data: "
-		            << BinaryStringMacros::binaryNumberToHexString(*buffer) << __E__;
-
-		FEProducerVInterface::copyToNextBuffer(*buffer);
+//
+//		readBlock(val, 42 , FIFOdepth, 0);
+//
+//		std::string* buffer;
+//		buffer = FEVInterface::getNextBuffer();
+//
+//		//std::string        buffer;
+//		buffer->resize(8);  // NOTE: this is inexpensive according to
+//		                   // Lorenzo/documentation in C++11 (only increases size once
+//		                   // and doesn't decrease size)
+//		memcpy((void*)buffer /*dest*/, (void*)&val /*src*/, FIFOdepth /*numOfBytes*/);
+//
+//	    	// size() and length() are equivalent
+//		__FE_COUT__ << "Writing to buffer " << buffer->size() << " bytes!" << __E__;
+//		__FE_COUT__ << "Writing to buffer length " << buffer->length() << " bytes!"
+//		            << __E__;
+//
+//		__FE_COUT__ << "Buffer Data: "
+//		            << BinaryStringMacros::binaryNumberToHexString(*buffer) << __E__;
+//
+//		FEVInterface::copyToNextBuffer(*buffer);
 	}
 	else
 	{
