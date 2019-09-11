@@ -6,8 +6,8 @@
 #include <string>
 
 #include "otsdaq-mu2e/FEInterfaces/ROCPolarFireCoreInterface.h"
-#include "otsdaq-core/DataManager/DataProducer.h"
-#include "otsdaq-core/FECore/FEProducerVInterface.h"
+#include "otsdaq/DataManager/DataProducer.h"
+#include "otsdaq/FECore/FEProducerVInterface.h"
 
 namespace ots
 {

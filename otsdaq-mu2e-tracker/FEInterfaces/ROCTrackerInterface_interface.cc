@@ -1,8 +1,8 @@
 #include "otsdaq-mu2e-tracker/FEInterfaces/ROCTrackerInterface.h"
-#include "otsdaq-core/DataManager/DataProducer.h"
-#include "otsdaq-core/DataManager/RawDataSaverConsumerBase.h"
+#include "otsdaq/DataManager/DataProducer.h"
+#include "otsdaq/DataManager/RawDataSaverConsumerBase.h"
 
-#include "otsdaq-core/Macros/InterfacePluginMacros.h"
+#include "otsdaq/Macros/InterfacePluginMacros.h"
 
 using namespace ots;
 
