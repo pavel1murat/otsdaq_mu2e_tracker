@@ -17,7 +17,7 @@ ROCTrackerInterface::ROCTrackerInterface(
     const std::string&       theConfigurationPath)
     : ROCPolarFireCoreInterface(rocUID, theXDAQContextConfigTree, theConfigurationPath)
 {
-	INIT_MF("ROCTrackerInterface");
+	INIT_MF("." /*directory used is USER_DATA/LOG/.*/);
 
 	__MCOUT_INFO__("ROCTrackerInterface instantiated with link: "
 	               << linkID_ << " and EventWindowDelayOffset = " << delay_ << __E__);
