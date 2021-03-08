@@ -42,8 +42,6 @@ namespace mu2e {
 
 		void stopNoMutex() override {}
 
-		void resetDTC();
-
 		void stop() override;
 
 		void readSimFile_(std::string sim_file);

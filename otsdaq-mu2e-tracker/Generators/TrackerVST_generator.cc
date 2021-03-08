@@ -28,7 +28,7 @@ mu2e::TrackerVST::TrackerVST(fhicl::ParameterSet const& ps) :
 	, timestamps_read_ (0)
 	, lastReportTime_  (std::chrono::steady_clock::now())
 	, mode_            (DTCLib::DTC_SimModeConverter::ConvertToSimMode(ps.get<std::string>("sim_mode", "Disabled")))
-	, board_id _       (static_cast<uint8_t>(ps.get<int>("board_id", 0)))
+	, board_id_        (static_cast<uint8_t>(ps.get<int>("board_id", 0)))
 	, rawOutput_       (ps.get<bool>("raw_output_enable", false))
 	, rawOutputFile_   (ps.get<std::string>("raw_output_file", "/tmp/TrackerVST.bin"))
 	, nSkip_           (ps.get<size_t>("fragment_receiver_count", 1))
@@ -68,7 +68,7 @@ mu2e::TrackerVST::TrackerVST(fhicl::ParameterSet const& ps) :
 		theInterface_->SetDetectorEmulatorInUse();
 		theInterface_->ResetDDR();
 
-		resetDTC();
+		theInterface_->ResetDTC();
 
 		char* file_c = getenv("DTCLIB_SIM_FILE");
 

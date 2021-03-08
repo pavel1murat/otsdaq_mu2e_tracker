@@ -33,7 +33,7 @@ include(FindUpsXdaq)
 cet_set_compiler_flags(DIAGS VIGILANT
  WERROR
  NO_UNDEFINED
- EXTRA_FLAGS -pedantic -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-maybe-uninitialized -Wno-ignored-qualifiers -Wno-unused-variable
+ EXTRA_FLAGS -pedantic -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-maybe-uninitialized -Wno-ignored-qualifiers -Wno-unused-variable -pthread
  )
 
 #string(TOUPPER ${CMAKE_BUILD_TYPE} BTYPE_UC )
@@ -57,6 +57,7 @@ find_ups_product( otsdaq v1_00_00 )
 find_ups_product( otsdaq_utilities v1_00_00 )
 find_ups_product( otsdaq_components v1_00_00 )
 find_ups_product( otsdaq_mu2e v1_00_00 )
+find_ups_product( mu2e_artdaq_core v1_00_00 )
 find_ups_product( pcie_linux_kernel_module v2_00_00 )
 find_ups_product( TRACE v3_03_00 )
 find_ups_xdaq( v11_2_7 )
