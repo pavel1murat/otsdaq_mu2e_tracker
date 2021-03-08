@@ -1,14 +1,18 @@
 
 simple_plugin(TrackerVST "generator"
-  artdaq-ots_Overlays
-#  artdaq-ots_Generators_UDPReceiver_generator
-  artdaq_Application
-  artdaq_DAQdata
+  mu2e-artdaq-core_Overlays
+  artdaq-utilities_Plugins
   artdaq-core_Utilities
+  artdaq_Generators
+  artdaq_DAQdata
+  artdaq_DAQrate
   artdaq-core_Data
-  ${ART_UTILITIES}
-  ${MF_MESSAGELOGGER}
+  ${CANVAS_LIB_LIST}
   ${FHICLCPP}
   ${CETLIB}
-  )
+  ${CETLIB_EXCEPT}
+  MF_MessageLogger
+  DTCInterface
+	${Boost_SYSTEM_LIBRARY}
+)
   
