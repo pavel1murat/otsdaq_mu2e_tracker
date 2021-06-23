@@ -161,9 +161,9 @@ bool mu2e::TrackerVST::getNext_(artdaq::FragmentPtrs& frags) {
 #endif
 	}
 
-	theInterface_->WriteROCRegister(DTCLib::DTC_Link_2,11,1,true);
+	theInterface_->WriteROCRegister(DTCLib::DTC_Link_2,11,1,true, 0);
 
-	DTCLib::roc_data_t r11 = theInterface_->ReadROCRegister(DTCLib::DTC_Link_2, 11);
+	DTCLib::roc_data_t r11 = theInterface_->ReadROCRegister(DTCLib::DTC_Link_2, 11, 0);
 	TLOG(TLVL_DEBUG) << "pasha reading regster 11: value=" << r11 ; 
 	
 
