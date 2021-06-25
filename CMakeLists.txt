@@ -46,7 +46,7 @@ cet_report_compiler_flags()
 # these are minimum required versions, not the actual product versions
 #find_ups_product( epics v3_15_2 )
 #find_ups_product( cetbuildtools v3_03_00 )
-#find_ups_product( artdaq v0_04_02 )
+find_ups_product( artdaq v0_04_02 )
 #find_ups_product( artdaq_core v1_00_00 )
 #find_ups_product( artdaq_utilities v1_00_00 )
 #find_ups_product( art v1_06_00 )
