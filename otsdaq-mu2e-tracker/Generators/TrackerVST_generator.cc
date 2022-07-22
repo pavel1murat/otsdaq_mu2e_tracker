@@ -10,9 +10,9 @@
 #include "artdaq/Generators/GeneratorMacros.hh"
 #include "cetlib_except/exception.h"
 #include "fhiclcpp/ParameterSet.h"
-#include "mu2e-artdaq-core/Overlays/FragmentType.hh"
-#include "mu2e-artdaq-core/Overlays/mu2eFragment.hh"
-#include "mu2e-artdaq-core/Overlays/mu2eFragmentWriter.hh"
+#include "artdaq-core-mu2e/Overlays/FragmentType.hh"
+#include "artdaq-core-mu2e/Overlays/mu2eFragment.hh"
+#include "artdaq-core-mu2e/Overlays/mu2eFragmentWriter.hh"
 
 #include <fstream>
 #include <iomanip>

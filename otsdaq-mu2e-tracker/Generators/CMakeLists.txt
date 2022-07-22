@@ -1,8 +1,6 @@
 
-basic_plugin(TrackerVST "generator"
-  mu2e_artdaq_core::mu2e-artdaq-core_Overlays
-  artdaq::DAQdata
-  artdaq::Generators
-  canvas::canvas
+include(artdaq::commandableGenerator)
+
+cet_build_plugin(TrackerVST artdaq::commandableGenerator LIBRARIES REG artdaq_core_mu2e::Overlays canvas::canvas
 )
   
