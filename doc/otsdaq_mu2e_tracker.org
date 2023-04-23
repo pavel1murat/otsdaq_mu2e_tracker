@@ -682,5 +682,5 @@ Memory Map:
 |       64 |                 |
 |       65 |                 |
 |----------+-----------------|
-* Monics's ROC read test and the data format                                 
-  file:figures/2023-04-23-monica-read-test-marked.png
+* Monicas's ROC read test and the data format                                 
+ [[file:figures/2023-04-23-monica-read-test-marked.png]]
