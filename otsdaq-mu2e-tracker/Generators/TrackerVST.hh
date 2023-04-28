@@ -38,70 +38,69 @@ namespace mu2e {
 
     bool sendEmpty_(artdaq::FragmentPtrs& output);
 
-    void start() override {}
+    void start      () override {}
+    void stopNoMutex() override {}
+    void stop       () override;
 
-		void stopNoMutex() override {}
+    void readSimFile_(std::string sim_file);
 
-		void stop() override;
+    // Like "getNext_", "fragmentIDs_" is a mandatory override; it
+    // returns a vector of the fragment IDs an instance of this class
+    // is responsible for (in the case of TrackerVST, this is just
+    // the fragment_id_ variable declared in the parent
+    // CommandableFragmentGenerator class)
 
-		void readSimFile_(std::string sim_file);
+    std::vector<artdaq::Fragment::fragment_id_t> fragmentIDs_() { return fragment_ids_; }
 
-	// Like "getNext_", "fragmentIDs_" is a mandatory override; it
-	// returns a vector of the fragment IDs an instance of this class
-	// is responsible for (in the case of TrackerVST, this is just
-	// the fragment_id_ variable declared in the parent
-	// CommandableFragmentGenerator class)
+    // FHiCL-configurable variables. Note that the C++ variable names
+    // are the FHiCL variable names with a "_" appended
 
-		std::vector<artdaq::Fragment::fragment_id_t> fragmentIDs_() { return fragment_ids_; }
+    FragmentType const fragment_type_;  // Type of fragment (see FragmentType.hh)
+    
+    std::vector<artdaq::Fragment::fragment_id_t> fragment_ids_;
 
-	// FHiCL-configurable variables. Note that the C++ variable names
-	// are the FHiCL variable names with a "_" appended
+    // State
+    size_t                                timestamps_read_;
+    size_t                                highest_timestamp_seen_{0};
+    size_t                                timestamp_loops_{0}; // For playback mode, so that we continually generate unique timestamps
+    DTCLib::DTC_SimMode     mode_;
+    uint8_t                 board_id_;
+    bool                    simFileRead_;
+    bool                    rawOutput_;
+    std::string             rawOutputFile_;
+    std::ofstream           rawOutputStream_;
+    size_t                  nSkip_;
+    bool                    sendEmpties_;
+    bool                    verbose_;
+    size_t                  nEvents_;
+    size_t                  request_delay_;
+    size_t                  heartbeats_after_;
+    int                     dtc_id_;
+    uint                    roc_mask_;
+    
+    DTCLib::DTC*            _dtc;
+    DTCLib::DTCSoftwareCFO* _cfo;
+    
+    std::chrono::steady_clock::time_point lastReportTime_;
+    std::chrono::steady_clock::time_point procStartTime_;
 
-		FragmentType const fragment_type_;  // Type of fragment (see FragmentType.hh)
-
-		std::vector<artdaq::Fragment::fragment_id_t> fragment_ids_;
-
-	// State
-		size_t                                timestamps_read_;
-		size_t                                highest_timestamp_seen_{0};
-		size_t                                timestamp_loops_{0}; // For playback mode, so that we continually generate unique timestamps
-		std::chrono::steady_clock::time_point lastReportTime_;
-		std::chrono::steady_clock::time_point procStartTime_;
-		DTCLib::DTC_SimMode     mode_;
-		uint8_t                 board_id_;
-		bool                    simFileRead_;
-		bool                    rawOutput_;
-		std::string             rawOutputFile_;
-		std::ofstream           rawOutputStream_;
-		size_t                  nSkip_;
-		bool                    sendEmpties_;
-		bool                    verbose_;
-		size_t                  nEvents_;
-		size_t                  request_delay_;
-		size_t                  heartbeats_after_;
-		int                     dtc_id_;
-		uint                    roc_mask_;
-		
-		DTCLib::DTC*            theInterface_;
-		DTCLib::DTCSoftwareCFO* theCFO_;
-		
-		double _timeSinceLastSend() {
-			auto now    = std::chrono::steady_clock::now();
-			auto deltaw =
-			std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1>>>(now - lastReportTime_).count();
-			lastReportTime_ = now;
-			return deltaw;
-		}
-
-		void   _startProcTimer() { procStartTime_ = std::chrono::steady_clock::now(); }
-
-		double _getProcTimerCount() {
-			auto now = std::chrono::steady_clock::now();
-			auto deltaw =
-				std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1>>>(now - procStartTime_).count();
-			return deltaw;
-		}
-	};
+    double _timeSinceLastSend() {
+      auto now    = std::chrono::steady_clock::now();
+      auto deltaw =
+	std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1>>>(now - lastReportTime_).count();
+      lastReportTime_ = now;
+      return deltaw;
+    }
+    
+    void   _startProcTimer() { procStartTime_ = std::chrono::steady_clock::now(); }
+    
+    double _getProcTimerCount() {
+      auto now = std::chrono::steady_clock::now();
+      auto deltaw =
+	std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1>>>(now - procStartTime_).count();
+      return deltaw;
+    }
+  };
 }  // namespace mu2e
 
 #endif /* mu2e_artdaq_Generators_TrackerVST_hh */
