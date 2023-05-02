@@ -66,9 +66,12 @@ namespace mu2e {
     void stop       () override;
 
     void readSimFile_(std::string sim_file);
+    mu2e_databuff_t* readDTCBuffer(mu2edev* device, bool& success, bool& timeout, size_t& sts, bool continuedMode);
 
     void printROCRegisters();
     void printDTCRegisters();
+
+    void monica_var_pattern_config();
 
     // Like "getNext_", "fragmentIDs_" is a mandatory override; it
     // returns a vector of the fragment IDs an instance of this class
@@ -107,6 +110,7 @@ namespace mu2e {
     DTC*            _dtc;
     DTCSoftwareCFO* _cfo;
     int             _firstTime;
+    int             _nbuffers;
     
     std::chrono::steady_clock::time_point lastReportTime_;
     std::chrono::steady_clock::time_point procStartTime_;
@@ -170,6 +174,7 @@ mu2e::TrackerVST::TrackerVST(fhicl::ParameterSet const& ps) :
 			      cfoConfig.get<bool>("force_no_debug_mode", false), 
 			      cfoConfig.get<bool>("useCFODRP", false));
     mode_ = _dtc->ReadSimMode();
+    _nbuffers = 2;     // N(buffers) per call
     
     TLOG(TLVL_INFO) << "The DTC Firmware version string is: " << _dtc->ReadDesignVersion();
     
@@ -240,18 +245,18 @@ bool mu2e::TrackerVST::getNext_(artdaq::FragmentPtrs& frags) {
 
   if (should_stop() or ev_counter() > nEvents_) return false;
 
-  if (sendEmpties_) {
-    int mod = ev_counter() % nSkip_;
-    if (mod == board_id_ || (mod == 0 && board_id_ == nSkip_)) {
-      // TLOG(TLVL_DEBUG) << "Sending Data  Fragment for sequence id " << ev_counter() << " (board_id " <<
-      // std::to_string(board_id_) << ")" ;
-    }
-    else {
-      // TLOG(TLVL_DEBUG) << "Sending Empty Fragment for sequence id " << ev_counter() << " (board_id " <<
-      // std::to_string(board_id_) << ")" ;
-      return sendEmpty_(frags);
-    }
-  }
+  // if (sendEmpties_) {
+  //   int mod = ev_counter() % nSkip_;
+  //   if (mod == board_id_ || (mod == 0 && board_id_ == nSkip_)) {
+  //     // TLOG(TLVL_DEBUG) << "Sending Data  Fragment for sequence id " << ev_counter() << " (board_id " <<
+  //     // std::to_string(board_id_) << ")" ;
+  //   }
+  //   else {
+  //     // TLOG(TLVL_DEBUG) << "Sending Empty Fragment for sequence id " << ev_counter() << " (board_id " <<
+  //     // std::to_string(board_id_) << ")" ;
+  //     return sendEmpty_(frags);
+  //   }
+  // }
   
   _startProcTimer();
   
@@ -259,8 +264,8 @@ bool mu2e::TrackerVST::getNext_(artdaq::FragmentPtrs& frags) {
   
   TLOG(TLVL_TRACE + 5) << oname << "Starting CFO thread";
 
-//   uint64_t z = 0;
-//   DTCLib::DTC_EventWindowTag zero(z);
+  uint64_t z = 0;
+  DTCLib::DTC_EventWindowTag zero(z);
 
 //   if (mode_ != 0) {
 // #if 0
@@ -303,35 +308,35 @@ bool mu2e::TrackerVST::getNext_(artdaq::FragmentPtrs& frags) {
 //   TLOG(TLVL_TRACE + 5) << oname << "Reserving space for 16 * 201 * BLOCK_COUNT_MAX bytes";
 //   newfrag.addSpace(mu2e::BLOCK_COUNT_MAX * 16 * 201);
 
-//   // Get data from Mu2eReceiver
-//   TLOG(TLVL_TRACE + 5) << oname << "Starting DTCFragment Loop";
-//   _dtc->GetDevice()->ResetDeviceTime();
-//   size_t totalSize = 0;
-//   bool first = true;
+  _dtc->GetDevice()->ResetDeviceTime();
+  size_t totalSize = 0;
+  //  bool first = true;
+
 //   while (newfrag.hdr_block_count() < mu2e::BLOCK_COUNT_MAX) {
 //     if (should_stop()) {
 //       break;
 //     }
 
-//     TLOG(TLVL_TRACE + 5) << oname << "Getting DTC Data for block " << newfrag.hdr_block_count() 
-// 			 << "/" << mu2e::BLOCK_COUNT_MAX
-// 			 << ", sz=" << totalSize;
+  TLOG(TLVL_TRACE + 5) << oname << "Getting DTC Data for block " 
+    // << newfrag.hdr_block_count() 
+		       << "/" << mu2e::BLOCK_COUNT_MAX
+		       << ", sz=" << totalSize;
 
-//     std::vector<std::unique_ptr<DTCLib::DTC_Event>> data;
-//     int retryCount = 5;
+  // std::vector<std::unique_ptr<DTCLib::DTC_Event>> data;
+  // int retryCount = 5;
     
-//     while (data.size() == 0 && retryCount >= 0) {
-//       try {
-// 	TLOG(TLVL_DEBUG) << oname << "Calling theInterface->GetData(zero)";
-// 	data = _dtc->GetData(zero);
-// 	TLOG(TLVL_DEBUG) << oname << "Done calling theInterface->GetData(zero)";
-//       }
-//       catch (std::exception const& ex) {
-// 	TLOG(TLVL_ERROR) << "There was an error in the DTC Library: " << ex.what();
-//       }
-//       retryCount--;
-//       // if (data.size() == 0){usleep(10000);}
-//     }
+  // while (data.size() == 0 && retryCount >= 0) {
+  //   try {
+  //     TLOG(TLVL_DEBUG) << oname << "Calling theInterface->GetData(zero)";
+  //     data = _dtc->GetData(zero);
+  //     TLOG(TLVL_DEBUG) << oname << "Done calling theInterface->GetData(zero)";
+  //   }
+  //   catch (std::exception const& ex) {
+  //     TLOG(TLVL_ERROR) << "There was an error in the DTC Library: " << ex.what();
+  //   }
+  //   retryCount--;
+  //   // if (data.size() == 0){usleep(10000);}
+  // }
     
 //     if (retryCount < 0 && data.size() == 0) {
 //       TLOG(TLVL_DEBUG) << oname << "Retry count exceeded. Something is very wrong indeed";
@@ -342,7 +347,7 @@ bool mu2e::TrackerVST::getNext_(artdaq::FragmentPtrs& frags) {
 //       }
 //       break;
 //     }
-    
+  
 //     TLOG(TLVL_TRACE + 6) << "Allocating space in Mu2eFragment for DTC packets";
 //     totalSize = 0;
 //     for (size_t i = 0; i < data.size(); ++i) {
@@ -404,8 +409,8 @@ bool mu2e::TrackerVST::getNext_(artdaq::FragmentPtrs& frags) {
 //     newfrag.endSubEvt(offset - newfrag.dataEndBytes());
 //   }
   
-//   TLOG(TLVL_TRACE + 5) << oname << "Incrementing event counter";
-//   ev_counter_inc();
+  TLOG(TLVL_TRACE + 5) << oname << "Incrementing event counter";
+  ev_counter_inc();
   
 //   TLOG(TLVL_TRACE + 5) << oname << "Reporting Metrics";
 //   timestamps_read_ += newfrag.hdr_block_count();
@@ -428,12 +433,22 @@ bool mu2e::TrackerVST::getNext_(artdaq::FragmentPtrs& frags) {
 
   //  _cfo->SendRequestForTimestamp(DTC_EventWindowTag(timestampOffset + 1, _heartbeatsAfter));
 
+//-----------------------------------------------------------------------------
+// to begin with, reproduce Monica's var_pattern_config
+//-----------------------------------------------------------------------------
+  monica_var_pattern_config();
+
+  auto device   = _dtc->GetDevice();
+  //  auto initTime = device->GetDeviceTime();
+  device->ResetDeviceTime();
+
+  // auto afterInit = std::chrono::steady_clock::now();
   if (_firstTime) {
     int  requests_ahead(0);
     bool increment_time_stamp(true);
     uint cfo_delay(200);
 
-    _cfo->SendRequestsForRange(nEvents_, 
+    _cfo->SendRequestsForRange(_nbuffers, 
 			       DTC_EventWindowTag(timestampOffset), 
 			       increment_time_stamp, 
 			       cfo_delay, 
@@ -442,53 +457,67 @@ bool mu2e::TrackerVST::getNext_(artdaq::FragmentPtrs& frags) {
     _firstTime = 0;
   }
   
-
-  auto   tmo_ms  = 1500;
+  // auto   tmo_ms      = 1500;
   bool   readSuccess = false;
-  bool   timeout = false;
-  size_t sts     = 0;
+  bool   timeout     = false;
+  size_t sts         = 0;
 
-  auto   device  = _dtc->GetDevice();
-  //  auto readoutRequestTime = device->GetDeviceTime();
-  device->ResetDeviceTime();
-  // auto afterRequests = std::chrono::steady_clock::now();
-
-  mu2e_databuff_t* buffer;
+  // mu2e_databuff_t* buffer;
 
   printROCRegisters();
 
-  TLOG(TLVL_TRACE) << "util - before read for DAQ";
-  sts = device->read_data(DTC_DMA_Engine_DAQ, reinterpret_cast<void**>(&buffer), tmo_ms);
-  TLOG(TLVL_TRACE) << "util - after read for DAQ sts=" << sts << ", buffer=" << (void*)buffer;
-  
-  if (sts > 0)    {
-    readSuccess = true;
-    void* readPtr = &buffer[0];
-    // uint16_t bufSize = static_cast<uint16_t>(*static_cast<uint64_t*>(readPtr));
-    readPtr = static_cast<uint8_t*>(readPtr) + 8;
+  // TLOG(TLVL_TRACE) << "util - before read for DAQ";
+  // sts = device->read_data(DTC_DMA_Engine_DAQ, reinterpret_cast<void**>(&buffer), tmo_ms);
+  // TLOG(TLVL_TRACE) << "util - after read for DAQ sts=" << sts << ", buffer=" << (void*)buffer;
+  uint extraReads(1);
 
-    if (sts > sizeof(DTC_EventHeader) + sizeof(DTC_SubEventHeader) + 8) {
-      // Check for dead or cafe in first packet
-      readPtr = static_cast<uint8_t*>(readPtr) + sizeof(DTC_EventHeader) + sizeof(DTC_SubEventHeader);
-      std::vector<size_t> wordsToCheck{ 1, 2, 3, 7, 8 };
-      for (auto& word : wordsToCheck) 	{
-	auto wordPtr = static_cast<uint16_t*>(readPtr) + (word - 1);
-	TLOG(TLVL_TRACE + 1) << word << (word == 1 ? "st" : word == 2 ? "nd"
-					 : word == 3 ? "rd"
-					 : "th")
-			     << " word of buffer: " << *wordPtr;
-	if (*wordPtr == 0xcafe || *wordPtr == 0xdead) 	  {
-	  TLOG(TLVL_WARNING) << "Buffer Timeout detected! " 
-			     << word << (word == 1 ? "st" : word == 2 ? "nd"
-					 : word == 3 ? "rd" : "th")
-			     << " word of buffer is 0x" << std::hex << *wordPtr;
-	  DTCLib::Utilities::PrintBuffer(readPtr, 16, 0, TLVL_TRACE + 3);
-	  timeout = true;
-	  break;
-	}
-      }
-    }
+  for (unsigned i=0; i<_nbuffers + extraReads; ++i) {
+
+    // auto startRequest = std::chrono::steady_clock::now();
+    _cfo->SendRequestForTimestamp(DTC_EventWindowTag(timestampOffset+i, _heartbeatsAfter));
+    // auto endRequest = std::chrono::steady_clock::now();
+    // readoutRequestTime +=
+    //   std::chrono::duration_cast<std::chrono::duration<double, std::ratio<1>>>(endRequest - startRequest).count();
+
+    TLOG(TLVL_DEBUG + 4) << "Buffer Read " << std::dec << i << std::endl;
+    
+    mu2e_databuff_t* buffer = readDTCBuffer(device, readSuccess, timeout, sts, false);
+    
+    DTCLib::Utilities::PrintBuffer(buffer, sts, 128);
+    
+    device->read_release(DTC_DMA_Engine_DAQ, 1);
+
+    int delay = 200;
+    if (delay > 0) usleep(delay);
   }
+  // if (sts > 0)    {
+  //   readSuccess = true;
+  //   void* readPtr = &buffer[0];
+  //   // uint16_t bufSize = static_cast<uint16_t>(*static_cast<uint64_t*>(readPtr));
+  //   readPtr = static_cast<uint8_t*>(readPtr) + 8;
+
+  //   if (sts > sizeof(DTC_EventHeader) + sizeof(DTC_SubEventHeader) + 8) {
+  //     // Check for dead or cafe in first packet
+  //     readPtr = static_cast<uint8_t*>(readPtr) + sizeof(DTC_EventHeader) + sizeof(DTC_SubEventHeader);
+  //     std::vector<size_t> wordsToCheck{ 1, 2, 3, 7, 8 };
+  //     for (auto& word : wordsToCheck) 	{
+  // 	auto wordPtr = static_cast<uint16_t*>(readPtr) + (word - 1);
+  // 	TLOG(TLVL_TRACE + 1) << word << (word == 1 ? "st" : word == 2 ? "nd"
+  // 					 : word == 3 ? "rd"
+  // 					 : "th")
+  // 			     << " word of buffer: " << *wordPtr;
+  // 	if (*wordPtr == 0xcafe || *wordPtr == 0xdead) 	  {
+  // 	  TLOG(TLVL_WARNING) << "Buffer Timeout detected! " 
+  // 			     << word << (word == 1 ? "st" : word == 2 ? "nd"
+  // 					 : word == 3 ? "rd" : "th")
+  // 			     << " word of buffer is 0x" << std::hex << *wordPtr;
+  // 	  DTCLib::Utilities::PrintBuffer(readPtr, 16, 0, TLVL_TRACE + 3);
+  // 	  timeout = true;
+  // 	  break;
+  // 	}
+  //     }
+  //   }
+  // }
   
   device->read_release(DTC_DMA_Engine_DAQ, 1);
 
@@ -588,35 +617,71 @@ void mu2e::TrackerVST::printROCRegisters() {
 
   TLOG(TLVL_DEBUG) << "-------------- mu2e::TrackerVst::" << __func__ ;
 
-  // Monica starts from disabling the EWM's
-  // my_cntl write 0x91a8 0x0
+  // Monica starts from disabling EWM's : my_cntl write 0x91a8 0x0
+
   _dtc->WriteRegister_(0,DTC_Register_CFOEmulation_HeartbeatInterval); // 0x91a8
 
-// step 1 : read everything : registers 0,8,18,23-59,65,66
+// step 1 : read everything : registers 0,8,18,23-59,64,65
 
   roc_data_t r[256]; 
 
   int tmo_ms(10);
 
-  r[ 0] = _dtc->ReadROCRegister(DTC_Link_0,  0, tmo_ms);
-  r[ 8] = _dtc->ReadROCRegister(DTC_Link_0,  8, tmo_ms);
-  r[18] = _dtc->ReadROCRegister(DTC_Link_0, 18, tmo_ms);
+  r[ 0]  = _dtc->ReadROCRegister(DTC_Link_0, 0,tmo_ms);
+  r[ 8]  = _dtc->ReadROCRegister(DTC_Link_0, 8,tmo_ms);
+  r[18]  = _dtc->ReadROCRegister(DTC_Link_0,18,tmo_ms);
 
   for (int i=23; i<60; i++) {
-    r[i] = _dtc->ReadROCRegister(DTC_Link_0, i, tmo_ms);
+    r[i] = _dtc->ReadROCRegister(DTC_Link_0, i,tmo_ms);
   }
 
-  r[65] = _dtc->ReadROCRegister(DTC_Link_0, 65, tmo_ms);
-  r[66] = _dtc->ReadROCRegister(DTC_Link_0, 66, tmo_ms);
+  r[64]  = _dtc->ReadROCRegister(DTC_Link_0,64,tmo_ms);
+  r[65]  = _dtc->ReadROCRegister(DTC_Link_0,65,tmo_ms);
 //-----------------------------------------------------------------------------
 // now the hard part - formatted printout
 //-----------------------------------------------------------------------------
-  TLOG(TLVL_DEBUG) << "ROC reg[ 0] : 0x" << std::hex << r[ 0] 
-		   << "ROC reg[ 8] : 0x" << std::hex << r[ 8] 
-		   << "ROC reg[18] : 0x" << std::hex << r[18];
+  int w1                  = (r[24]<<16) | r[23] ;
+  int w2                  = (r[26]<<16) | r[25] ;
+  int n_evm_seen          = (r[65]<<16) | r[64] ;
+  int n_hbt_seen          = (r[28]<<16) | r[27] ;
+  int n_null_hbt          = (r[30]<<16) | r[29] ;
+  int n_hbt_hold          = (r[32]<<16) | r[31] ;
+  int n_prefetch          = (r[34]<<16) | r[33] ;
+  int n_data_req          = (r[36]<<16) | r[35] ;
+  int n_data_req_read_ddr = (r[38]<<16) | r[37] ;
+  int n_data_req_sent_dtc = (r[40]<<16) | r[39] ;
+  int n_data_req_null_dat = (r[42]<<16) | r[41] ;
+  int last_spill_tag      = (r[44]<<16) | r[43] ;
 
-  int w = (r[24]<<16) | r[23] ;
-  TLOG(TLVL_DEBUG) << "SIZE_FIFO_FULL[28]+STORE_POS[25:24]+STORE_CNT[19:0]: 0x" << std::hex << w;
+  TLOG(TLVL_DEBUG) << "ROC registers:" 
+		   << " reg[ 0]: 0x" << std::hex << r[ 0] 
+		   << " reg[ 8]: 0x" << std::hex << r[ 8] 
+		   << " reg[18]: 0x" << std::hex << r[18]
+		   << std::endl 
+                   << "SIZE_FIFO_FULL [28]+STORE_POS[25:24]+STORE_CNT[19:0]: 0x" << std::hex << w1
+		   << std::endl 
+                   << "SIZE_FIFO_EMPTY[28]+FETCH_POS[25:24]+FETCH_CNT[19:0]: 0x" << std::hex << w2
+		   << std::endl 
+                   << "N(EWM)      seen    : 0x" << std::hex << n_evm_seen
+		   << std::endl 
+                   << "N(HBT)      seen    : 0x" << std::hex << n_hbt_seen
+		   << std::endl 
+                   << "N(null HBT) seen    : 0x" << std::hex << n_null_hbt
+		   << std::endl 
+                   << "N(HBT on hold)      : 0x" << std::hex << n_hbt_hold
+		   << std::endl 
+                   << "N(prefetch)         : 0x" << std::hex << n_prefetch
+		   << std::endl 
+                   << "N(data req)         : 0x" << std::hex << n_data_req
+		   << std::endl 
+                   << "N(data req read DDR): 0x" << std::hex << n_data_req_read_ddr
+		   << std::endl 
+                   << "N(data req sent DTC): 0x" << std::hex << n_data_req_sent_dtc
+		   << std::endl 
+                   << "N(data req null dat): 0x" << std::hex << n_data_req_null_dat
+		   << std::endl 
+                   << "Last spill tag)     : 0x" << std::hex << last_spill_tag
+    ;
 }
 
 //-----------------------------------------------------------------------------
@@ -624,7 +689,74 @@ void mu2e::TrackerVST::printDTCRegisters() {
   TLOG(TLVL_DEBUG) << "-------------- mu2e::TrackerVst::" << __func__ ;
 }
 
+//-----------------------------------------------------------------------------
+void mu2e::TrackerVST::monica_var_pattern_config() {
+  // bool ok;
+  int tmo_ms(1500);
+  TLOG(TLVL_DEBUG) << "-------------- mu2e::TrackerVst::" << __func__ ;
 
+  // 1. disable EWM
+  _dtc->WriteRegister_(0,DTC_Register_CFOEmulation_HeartbeatInterval); // 0x91a8
+
+  // 2. reset link
+  _dtc->WriteROCRegister(DTC_Link_0,14, 0x1, false, tmo_ms);
+  
+  // 3. setup ROC for simulated increasing counter pattern
+  _dtc->WriteROCRegister(DTC_Link_0, 8,0x10,false,tmo_ms);
+
+  // 4. set mode, mode=0: STATUS_BIT=0x55
+  _dtc->WriteROCRegister(DTC_Link_0,30,0x0,false,tmo_ms);
+}
+
+//-----------------------------------------------------------------------------
+// this is to make an organized transition
+//-----------------------------------------------------------------------------
+mu2e_databuff_t* mu2e::TrackerVST::readDTCBuffer(mu2edev* device, bool& readSuccess, bool& timeout, 
+						 size_t& sts, bool continuedMode) {
+  mu2e_databuff_t* buffer;
+  auto tmo_ms = 1500;
+  readSuccess = false;
+  TLOG(TLVL_TRACE) << "util - before read for DAQ";
+  sts = device->read_data(DTC_DMA_Engine_DAQ, reinterpret_cast<void**>(&buffer), tmo_ms);
+  TLOG(TLVL_TRACE) << "util - after read for DAQ sts=" << sts << ", buffer=" << (void*)buffer;
+  
+  if (sts > 0)    {
+    readSuccess = true;
+    void* readPtr = &buffer[0];
+    uint16_t bufSize = static_cast<uint16_t>(*static_cast<uint64_t*>(readPtr));
+    readPtr = static_cast<uint8_t*>(readPtr) + 8;
+
+    TLOG(TLVL_DEBUG + 4) << "Buffer reports DMA size of " 
+			 << std::dec << bufSize << " bytes. Device driver reports read of "
+			 << sts << " bytes," << std::endl;
+    
+    TLOG(TLVL_TRACE) << "util - bufSize is " << bufSize;
+
+    timeout = false;
+    if (!continuedMode && sts > sizeof(DTC_EventHeader) + sizeof(DTC_SubEventHeader) + 8) {
+      // Check for dead or cafe in first packet
+      readPtr = static_cast<uint8_t*>(readPtr) + sizeof(DTC_EventHeader) + sizeof(DTC_SubEventHeader);
+      std::vector<size_t> wordsToCheck{ 1, 2, 3, 7, 8 };
+      for (auto& word : wordsToCheck) 	{
+	auto wordPtr = static_cast<uint16_t*>(readPtr) + (word - 1);
+	TLOG(TLVL_TRACE + 1) << word << (word == 1 ? "st" : word == 2 ? "nd"
+					 : word == 3 ? "rd"
+					 : "th")
+			     << " word of buffer: " << *wordPtr;
+	if (*wordPtr == 0xcafe || *wordPtr == 0xdead) 	  {
+	  TLOG(TLVL_WARNING) << "Buffer Timeout detected! " 
+			     << word << (word == 1 ? "st" : word == 2 ? "nd"
+					 : word == 3 ? "rd" : "th")
+			     << " word of buffer is 0x" << std::hex << *wordPtr;
+	  DTCLib::Utilities::PrintBuffer(readPtr, 16, 0, TLVL_TRACE + 3);
+	  timeout = true;
+	  break;
+	}
+      }
+    }
+  }
+  return buffer;
+}
 
 
 // The following macro is defined in artdaq's GeneratorMacros.hh header
